@@ -23,16 +23,16 @@ export default function Index() {
       <div className="relative z-10 -mt-24 min-h-screen">
         <section className="pt-32 pb-20 px-6">
           <div className="container mx-auto max-w-4xl text-center">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight">
+            <h1 className="text-5xl md:text-7xl font-light text-white mb-6 leading-tight">
               Digital Writing Studio
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-              Welcome to a space where ideas converge, creativity flows, and every word matters. 
+            <p className="text-xl md:text-2xl text-white/70 mb-8">
+              Welcome to a space where ideas converge, creativity flows, and every word matters.
               Join us on a journey through the art and craft of writing.
             </p>
             <Link
               to="/blog"
-              className="inline-block px-8 py-4 bg-gradient-primary text-white font-semibold rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/30 hover:-translate-y-1"
+              className="inline-block rounded-full border border-white/15 px-8 py-4 text-sm font-light uppercase tracking-[0.18em] text-white/80 transition-all duration-300 hover:bg-white/10 hover:text-white"
             >
               Explore Our Stories
             </Link>
