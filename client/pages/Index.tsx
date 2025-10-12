@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Hero } from '@/components/Hero';
+import NeuralNetworkHero from '@/components/ui/neural-network-hero';
 import { PostCard } from '@/components/blog/PostCard';
 import { getFeaturedPosts, getLatestPosts } from '@/data/posts';
 
@@ -9,9 +9,18 @@ export default function Index() {
 
   return (
     <>
-      <Hero />
-      
-      <div className="relative z-10 min-h-screen">
+      <NeuralNetworkHero
+        title="Where algorithms become art."
+        description="A minimal hero with a neural canvas — crisp, elegant, and quietly expressive. Built with React, Three.js, and a custom CPPN shader."
+        badgeLabel="New"
+        badgeText="Generative Surfaces"
+        ctaButtons={[
+          { text: 'Get started', href: '/blog', primary: true },
+          { text: 'View showcase', href: '/demo' },
+        ]}
+      />
+
+      <div className="relative z-10 -mt-24 min-h-screen">
         <section className="pt-32 pb-20 px-6">
           <div className="container mx-auto max-w-4xl text-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight">
