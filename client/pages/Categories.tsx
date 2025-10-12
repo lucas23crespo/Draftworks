@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
-import { categories } from '@/data/categories';
-import { FileText } from 'lucide-react';
+import { Link } from "react-router-dom";
+import { categories } from "@/data/categories";
+import { FileText } from "lucide-react";
 
 export default function Categories() {
   return (
@@ -10,9 +10,7 @@ export default function Categories() {
           <h1 className="mb-4 text-4xl font-light text-white md:text-5xl">
             Categories
           </h1>
-          <p className="text-xl text-white/60">
-            Explore posts by category
-          </p>
+          <p className="text-xl text-white/60">Explore posts by category</p>
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -31,7 +29,7 @@ export default function Categories() {
                     {category.name}
                   </h2>
                   <p className="text-sm text-white/50">
-                    {category.count} {category.count === 1 ? 'post' : 'posts'}
+                    {category.count} {category.count === 1 ? "post" : "posts"}
                   </p>
                 </div>
               </div>

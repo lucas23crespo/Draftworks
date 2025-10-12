@@ -1,4 +1,4 @@
-import { Mail, Send } from 'lucide-react';
+import { Mail, Send } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -10,11 +10,14 @@ export default function Contact() {
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           <div className="rounded-2xl border border-white/10 bg-white/5 p-8">
-            <h2 className="mb-6 text-2xl font-light text-white">Contact Information</h2>
+            <h2 className="mb-6 text-2xl font-light text-white">
+              Contact Information
+            </h2>
 
             <p className="mb-6 text-white/60">
-              We'd love to hear from you! Whether you have questions, suggestions, or just want to connect 
-              with fellow writers, feel free to reach out.
+              We'd love to hear from you! Whether you have questions,
+              suggestions, or just want to connect with fellow writers, feel
+              free to reach out.
             </p>
 
             <div className="space-y-4">
@@ -23,7 +26,9 @@ export default function Contact() {
                   <Mail className="h-5 w-5 text-white/60" />
                 </div>
                 <div>
-                  <p className="text-xs font-light uppercase tracking-[0.3em] text-white/40">Email</p>
+                  <p className="text-xs font-light uppercase tracking-[0.3em] text-white/40">
+                    Email
+                  </p>
                   <a
                     href="mailto:contact@digitalwritingstudio.com"
                     className="text-white/70 transition-colors hover:text-white"
@@ -35,19 +40,27 @@ export default function Contact() {
             </div>
 
             <div className="mt-8 border-t border-white/10 pt-8">
-              <h3 className="mb-3 text-sm font-light text-white/70">Follow us on social media</h3>
+              <h3 className="mb-3 text-sm font-light text-white/70">
+                Follow us on social media
+              </h3>
               <p className="text-sm text-white/50">
-                Stay updated with our latest posts, discussions, and writing tips across social platforms.
+                Stay updated with our latest posts, discussions, and writing
+                tips across social platforms.
               </p>
             </div>
           </div>
 
           <div className="rounded-2xl border border-white/10 bg-white/5 p-8">
-            <h2 className="mb-6 text-2xl font-light text-white">Send a Message</h2>
+            <h2 className="mb-6 text-2xl font-light text-white">
+              Send a Message
+            </h2>
 
             <form className="space-y-4">
               <div>
-                <label htmlFor="name" className="mb-2 block text-xs font-light uppercase tracking-[0.3em] text-white/40">
+                <label
+                  htmlFor="name"
+                  className="mb-2 block text-xs font-light uppercase tracking-[0.3em] text-white/40"
+                >
                   Name
                 </label>
                 <input
@@ -59,7 +72,10 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="email" className="mb-2 block text-xs font-light uppercase tracking-[0.3em] text-white/40">
+                <label
+                  htmlFor="email"
+                  className="mb-2 block text-xs font-light uppercase tracking-[0.3em] text-white/40"
+                >
                   Email
                 </label>
                 <input
@@ -71,7 +87,10 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="message" className="mb-2 block text-xs font-light uppercase tracking-[0.3em] text-white/40">
+                <label
+                  htmlFor="message"
+                  className="mb-2 block text-xs font-light uppercase tracking-[0.3em] text-white/40"
+                >
                   Message
                 </label>
                 <textarea
@@ -95,9 +114,10 @@ export default function Contact() {
 
         <div className="mt-12 rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
           <p className="text-white/60">
-            Your thoughts and feedback help shape this community. Don't hesitate to share your ideas, 
-            ask questions, or simply say hello. Every conversation enriches our collective understanding 
-            of the writing craft.
+            Your thoughts and feedback help shape this community. Don't hesitate
+            to share your ideas, ask questions, or simply say hello. Every
+            conversation enriches our collective understanding of the writing
+            craft.
           </p>
         </div>
       </div>

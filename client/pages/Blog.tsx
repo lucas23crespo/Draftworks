@@ -1,29 +1,31 @@
-import { useMemo, useState } from 'react';
-import { Search } from 'lucide-react';
-import { PostCard } from '@/components/blog/PostCard';
-import { TagPill } from '@/components/blog/TagPill';
-import { CategoryPill } from '@/components/blog/CategoryPill';
-import { posts } from '@/data/posts';
-import { categories } from '@/data/categories';
+import { useMemo, useState } from "react";
+import { Search } from "lucide-react";
+import { PostCard } from "@/components/blog/PostCard";
+import { TagPill } from "@/components/blog/TagPill";
+import { CategoryPill } from "@/components/blog/CategoryPill";
+import { posts } from "@/data/posts";
+import { categories } from "@/data/categories";
 
 export default function Blog() {
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
 
   const allTags = useMemo(() => {
     const tags = new Set<string>();
-    posts.forEach(post => post.tags.forEach(tag => tags.add(tag)));
+    posts.forEach((post) => post.tags.forEach((tag) => tags.add(tag)));
     return Array.from(tags);
   }, []);
 
   const filteredPosts = useMemo(() => {
-    return posts.filter(post => {
-      const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                           post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
-      const matchesCategory = !selectedCategory || post.category === selectedCategory;
+    return posts.filter((post) => {
+      const matchesSearch =
+        post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
+      const matchesCategory =
+        !selectedCategory || post.category === selectedCategory;
       const matchesTag = !selectedTag || post.tags.includes(selectedTag);
-      
+
       return matchesSearch && matchesCategory && matchesTag;
     });
   }, [searchQuery, selectedCategory, selectedTag]);
@@ -54,13 +56,15 @@ export default function Blog() {
 
           <div className="flex flex-wrap gap-4">
             <div className="flex items-center gap-2">
-              <span className="text-xs font-light uppercase tracking-[0.3em] text-white/40">Categories</span>
+              <span className="text-xs font-light uppercase tracking-[0.3em] text-white/40">
+                Categories
+              </span>
               <button
                 onClick={() => setSelectedCategory(null)}
                 className={`rounded-full px-4 py-2 text-[11px] font-light uppercase tracking-[0.25em] transition-colors ${
                   !selectedCategory
-                    ? 'bg-white/10 text-white'
-                    : 'border border-white/10 text-white/50 hover:bg-white/5'
+                    ? "bg-white/10 text-white"
+                    : "border border-white/10 text-white/50 hover:bg-white/5"
                 }`}
               >
                 All
@@ -71,8 +75,8 @@ export default function Blog() {
                   onClick={() => setSelectedCategory(cat.name)}
                   className={`rounded-full px-4 py-2 text-[11px] font-light uppercase tracking-[0.25em] transition-colors ${
                     selectedCategory === cat.name
-                      ? 'bg-white/10 text-white'
-                      : 'border border-white/10 text-white/50 hover:bg-white/5'
+                      ? "bg-white/10 text-white"
+                      : "border border-white/10 text-white/50 hover:bg-white/5"
                   }`}
                 >
                   {cat.name} ({cat.count})
@@ -82,13 +86,15 @@ export default function Blog() {
           </div>
 
           <div className="flex flex-wrap gap-2">
-            <span className="self-center text-xs font-light uppercase tracking-[0.3em] text-white/40">Tags</span>
+            <span className="self-center text-xs font-light uppercase tracking-[0.3em] text-white/40">
+              Tags
+            </span>
             <button
               onClick={() => setSelectedTag(null)}
               className={`rounded-full px-3 py-1 text-[11px] font-light uppercase tracking-[0.25em] transition-colors ${
                 !selectedTag
-                  ? 'bg-white/10 text-white'
-                  : 'border border-white/10 text-white/50 hover:bg-white/5'
+                  ? "bg-white/10 text-white"
+                  : "border border-white/10 text-white/50 hover:bg-white/5"
               }`}
             >
               All
@@ -99,8 +105,8 @@ export default function Blog() {
                 onClick={() => setSelectedTag(tag)}
                 className={`rounded-full px-3 py-1 text-[11px] font-light uppercase tracking-[0.25em] transition-colors ${
                   selectedTag === tag
-                    ? 'bg-white/10 text-white'
-                    : 'border border-white/10 text-white/50 hover:bg-white/5'
+                    ? "bg-white/10 text-white"
+                    : "border border-white/10 text-white/50 hover:bg-white/5"
                 }`}
               >
                 {tag}
@@ -111,7 +117,9 @@ export default function Blog() {
 
         {filteredPosts.length === 0 ? (
           <div className="py-20 text-center">
-            <p className="text-xl text-white/60">No posts found matching your criteria.</p>
+            <p className="text-xl text-white/60">
+              No posts found matching your criteria.
+            </p>
           </div>
         ) : (
           <>

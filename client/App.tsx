@@ -34,10 +34,34 @@ const App = () => (
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<Post />} />
               <Route path="/authors" element={<Authors />} />
-              <Route path="/authors/:id" element={<Placeholder title="Author Profile" description="Author profile page coming soon" />} />
+              <Route
+                path="/authors/:id"
+                element={
+                  <Placeholder
+                    title="Author Profile"
+                    description="Author profile page coming soon"
+                  />
+                }
+              />
               <Route path="/categories" element={<Categories />} />
-              <Route path="/categories/:slug" element={<Placeholder title="Category Posts" description="Category-specific posts coming soon" />} />
-              <Route path="/tags/:slug" element={<Placeholder title="Tagged Posts" description="Tag-specific posts coming soon" />} />
+              <Route
+                path="/categories/:slug"
+                element={
+                  <Placeholder
+                    title="Category Posts"
+                    description="Category-specific posts coming soon"
+                  />
+                }
+              />
+              <Route
+                path="/tags/:slug"
+                element={
+                  <Placeholder
+                    title="Tagged Posts"
+                    description="Tag-specific posts coming soon"
+                  />
+                }
+              />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />

@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
+import { Link } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
 
 interface PlaceholderProps {
   title: string;
@@ -19,14 +19,11 @@ export default function Placeholder({ title, description }: PlaceholderProps) {
         </Link>
 
         <div className="rounded-2xl border border-white/10 bg-white/5 p-12 text-center">
-          <h1 className="mb-4 text-4xl font-light text-white">
-            {title}
-          </h1>
-          <p className="mb-8 text-xl text-white/60">
-            {description}
-          </p>
+          <h1 className="mb-4 text-4xl font-light text-white">{title}</h1>
+          <p className="mb-8 text-xl text-white/60">{description}</p>
           <p className="text-white/60">
-            This page is coming soon. Continue exploring our content or let us know if you'd like us to prioritize this feature!
+            This page is coming soon. Continue exploring our content or let us
+            know if you'd like us to prioritize this feature!
           </p>
           <div className="mt-8 flex gap-4 justify-center">
             <Link

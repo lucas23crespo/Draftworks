@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import { useRef, useMemo } from 'react';
-import { Canvas, useFrame, extend } from '@react-three/fiber';
-import { shaderMaterial } from '@react-three/drei';
-import * as THREE from 'three';
+import { useRef, useMemo } from "react";
+import { Canvas, useFrame, extend } from "@react-three/fiber";
+import { shaderMaterial } from "@react-three/drei";
+import * as THREE from "three";
 
-import { useGSAP } from '@gsap/react';
-import gsap from 'gsap';
-import { SplitText } from 'gsap/SplitText';
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { SplitText } from "gsap/SplitText";
 
 gsap.registerPlugin(SplitText, useGSAP);
 
@@ -157,7 +157,7 @@ const fragmentShader = `
 const CPPNShaderMaterial = shaderMaterial(
   { iTime: 0, iResolution: new THREE.Vector2(1, 1) },
   vertexShader,
-  fragmentShader
+  fragmentShader,
 );
 
 extend({ CPPNShaderMaterial });
@@ -183,51 +183,66 @@ function ShaderPlane() {
 
 function ShaderBackground() {
   const canvasRef = useRef<HTMLDivElement | null>(null);
-  
-  const camera = useMemo(() => ({ position: [0, 0, 1] as [number, number, number], fov: 75, near: 0.1, far: 1000 }), []);
-  
+
+  const camera = useMemo(
+    () => ({
+      position: [0, 0, 1] as [number, number, number],
+      fov: 75,
+      near: 0.1,
+      far: 1000,
+    }),
+    [],
+  );
+
   useGSAP(
     () => {
       if (!canvasRef.current) return;
-      
+
       gsap.set(canvasRef.current, {
-        filter: 'blur(20px)',
+        filter: "blur(20px)",
         scale: 1.1,
-        autoAlpha: 0.7
+        autoAlpha: 0.7,
       });
-      
+
       gsap.to(canvasRef.current, {
-        filter: 'blur(0px)',
+        filter: "blur(0px)",
         scale: 1,
         autoAlpha: 1,
         duration: 1.5,
-        ease: 'power3.out',
-        delay: 0.3
+        ease: "power3.out",
+        delay: 0.3,
       });
     },
-    { scope: canvasRef }
+    { scope: canvasRef },
   );
-  
+
   return (
-    <div ref={canvasRef} className="bg-black absolute inset-0 -z-10 w-full h-full" aria-hidden>
+    <div
+      ref={canvasRef}
+      className="bg-black absolute inset-0 -z-10 w-full h-full"
+      aria-hidden
+    >
       <Canvas
         camera={camera}
         gl={{ antialias: true, alpha: false }}
         dpr={[1, 2]}
-        style={{ width: '100vw', height: '100vh' }}
+        style={{ width: "100vw", height: "100vh" }}
       >
         <ShaderPlane />
       </Canvas>
-      <div style={{
-        backgroundImage: 'linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2))',
-        bottom: 0,
-        fontWeight: 300,
-        left: 0,
-        pointerEvents: 'none',
-        position: 'absolute',
-        right: 0,
-        top: 0,
-      }} />
+      <div
+        style={{
+          backgroundImage:
+            "linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2))",
+          bottom: 0,
+          fontWeight: 300,
+          left: 0,
+          pointerEvents: "none",
+          position: "absolute",
+          right: 0,
+          top: 0,
+        }}
+      />
     </div>
   );
 }
@@ -248,7 +263,7 @@ export default function Hero({
   badgeLabel = "New",
   ctaButtons = [
     { text: "Get started", href: "#get-started", primary: true },
-    { text: "View showcase", href: "#showcase" }
+    { text: "View showcase", href: "#showcase" },
   ],
 }: HeroProps) {
   const sectionRef = useRef<HTMLElement | null>(null);
@@ -262,16 +277,16 @@ export default function Hero({
 
       document.fonts.ready.then(() => {
         const split = new SplitText(headerRef.current!, {
-          type: 'lines',
-          wordsClass: 'lines',
+          type: "lines",
+          wordsClass: "lines",
         });
 
         gsap.set(split.lines, {
-          filter: 'blur(16px)',
+          filter: "blur(16px)",
           yPercent: 30,
           autoAlpha: 0,
           scale: 1.06,
-          transformOrigin: '50% 100%',
+          transformOrigin: "50% 100%",
         });
 
         if (paraRef.current) {
@@ -282,14 +297,13 @@ export default function Hero({
         }
 
         const tl = gsap.timeline({
-          defaults: { ease: 'power3.out' },
+          defaults: { ease: "power3.out" },
         });
-
 
         tl.to(
           split.lines,
           {
-            filter: 'blur(0px)',
+            filter: "blur(0px)",
             yPercent: 0,
             autoAlpha: 1,
             scale: 1,
@@ -300,10 +314,18 @@ export default function Hero({
         );
 
         if (paraRef.current) {
-          tl.to(paraRef.current, { autoAlpha: 1, y: 0, duration: 0.5 }, '-=0.55');
+          tl.to(
+            paraRef.current,
+            { autoAlpha: 1, y: 0, duration: 0.5 },
+            "-=0.55",
+          );
         }
         if (ctaRef.current) {
-          tl.to(ctaRef.current, { autoAlpha: 1, y: 0, duration: 0.5 }, '-=0.35');
+          tl.to(
+            ctaRef.current,
+            { autoAlpha: 1, y: 0, duration: 0.5 },
+            "-=0.35",
+          );
         }
       });
     },
@@ -311,39 +333,55 @@ export default function Hero({
   );
 
   return (
-    <section ref={sectionRef} className="relative h-screen w-screen overflow-hidden">
+    <section
+      ref={sectionRef}
+      className="relative h-screen w-screen overflow-hidden"
+    >
       <ShaderBackground />
 
-      <div className="relative mx-auto flex flex-col items-center text-center" style={{
-        display: 'flex',
-        alignItems: 'center',
-        flexDirection: 'column',
-        fontWeight: 300,
-        gap: '32px',
-        maxWidth: '1280px',
-        position: 'relative',
-        textAlign: 'center',
-        justifyContent: 'center',
-        margin: '160px auto 30px',
-        padding: '176px 64px 96px',
-      }}>
-
-        <h1 ref={headerRef} aria-label="Where algorithms become art." style={{
-          fontSize: '72px',
-          fontWeight: 200,
-          letterSpacing: '-1.8px',
-          lineHeight: '72px',
-          maxWidth: '672px',
-          margin: '0 auto',
-        }} className="text-white">
+      <div
+        className="relative mx-auto flex flex-col items-center text-center"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          flexDirection: "column",
+          fontWeight: 300,
+          gap: "32px",
+          maxWidth: "1280px",
+          position: "relative",
+          textAlign: "center",
+          justifyContent: "center",
+          margin: "160px auto 30px",
+          padding: "176px 64px 96px",
+        }}
+      >
+        <h1
+          ref={headerRef}
+          aria-label="Where algorithms become art."
+          style={{
+            fontSize: "72px",
+            fontWeight: 200,
+            letterSpacing: "-1.8px",
+            lineHeight: "72px",
+            maxWidth: "672px",
+            margin: "0 auto",
+          }}
+          className="text-white"
+        >
           {title}
         </h1>
 
-        <p ref={paraRef} className="max-w-xl mx-auto text-center text-base font-light leading-relaxed tracking-tight text-white/75 sm:text-lg">
+        <p
+          ref={paraRef}
+          className="max-w-xl mx-auto text-center text-base font-light leading-relaxed tracking-tight text-white/75 sm:text-lg"
+        >
           {description}
         </p>
 
-        <div ref={ctaRef} className="flex flex-wrap items-center justify-center gap-3 pt-2">
+        <div
+          ref={ctaRef}
+          className="flex flex-wrap items-center justify-center gap-3 pt-2"
+        >
           {ctaButtons.map((button, index) => (
             <a
               key={index}
@@ -358,7 +396,6 @@ export default function Hero({
             </a>
           ))}
         </div>
-
       </div>
 
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/40 to-transparent" />
@@ -366,7 +403,7 @@ export default function Hero({
   );
 }
 
-declare module '@react-three/fiber' {
+declare module "@react-three/fiber" {
   interface ThreeElements {
     cPPNShaderMaterial: any;
   }

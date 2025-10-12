@@ -1,15 +1,17 @@
-import { Post } from '@/types/blog';
+import { Post } from "@/types/blog";
 
 export const posts: Post[] = [
   {
-    slug: 'mastering-the-art-of-storytelling',
-    title: 'Mastering the Art of Storytelling in Modern Writing',
-    excerpt: 'Exploring how contemporary writers blend traditional narrative techniques with innovative approaches to captivate readers in the digital age.',
-    author: 'Sarah Mitchell',
-    tags: ['Storytelling', 'Creative Writing', 'Narrative'],
-    category: 'Craft',
-    cover: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&auto=format&fit=crop',
-    date: '2024-01-15',
+    slug: "mastering-the-art-of-storytelling",
+    title: "Mastering the Art of Storytelling in Modern Writing",
+    excerpt:
+      "Exploring how contemporary writers blend traditional narrative techniques with innovative approaches to captivate readers in the digital age.",
+    author: "Sarah Mitchell",
+    tags: ["Storytelling", "Creative Writing", "Narrative"],
+    category: "Craft",
+    cover:
+      "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&auto=format&fit=crop",
+    date: "2024-01-15",
     published: true,
     featured: true,
     readingTime: 8,
@@ -30,17 +32,19 @@ Modern writers face unique challenges and opportunities. The digital landscape h
 
 ## Conclusion
 
-The future of storytelling lies in embracing both tradition and innovation, crafting narratives that honor the past while boldly stepping into the future.`
+The future of storytelling lies in embracing both tradition and innovation, crafting narratives that honor the past while boldly stepping into the future.`,
   },
   {
-    slug: 'the-power-of-minimalist-writing',
-    title: 'The Power of Minimalist Writing: Less is More',
-    excerpt: 'Discover how stripping away unnecessary words can amplify your message and create more impactful prose.',
-    author: 'James Chen',
-    tags: ['Minimalism', 'Style', 'Editing'],
-    category: 'Technique',
-    cover: 'https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?w=800&auto=format&fit=crop',
-    date: '2024-01-10',
+    slug: "the-power-of-minimalist-writing",
+    title: "The Power of Minimalist Writing: Less is More",
+    excerpt:
+      "Discover how stripping away unnecessary words can amplify your message and create more impactful prose.",
+    author: "James Chen",
+    tags: ["Minimalism", "Style", "Editing"],
+    category: "Technique",
+    cover:
+      "https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?w=800&auto=format&fit=crop",
+    date: "2024-01-10",
     published: true,
     featured: true,
     readingTime: 6,
@@ -59,17 +63,19 @@ Every word should earn its place on the page. Minimalist writing forces authors 
 - Eliminate filler words
 - Trust your reader's intelligence
 
-The art of omission is often more powerful than the art of inclusion.`
+The art of omission is often more powerful than the art of inclusion.`,
   },
   {
-    slug: 'building-authentic-dialogue',
-    title: 'Building Authentic Dialogue That Brings Characters to Life',
-    excerpt: 'Learn the secrets to crafting dialogue that sounds natural, reveals character, and advances your plot seamlessly.',
-    author: 'Sarah Mitchell',
-    tags: ['Dialogue', 'Character', 'Fiction'],
-    category: 'Craft',
-    cover: 'https://images.unsplash.com/photo-1516414447565-b14be0adf13e?w=800&auto=format&fit=crop',
-    date: '2024-01-05',
+    slug: "building-authentic-dialogue",
+    title: "Building Authentic Dialogue That Brings Characters to Life",
+    excerpt:
+      "Learn the secrets to crafting dialogue that sounds natural, reveals character, and advances your plot seamlessly.",
+    author: "Sarah Mitchell",
+    tags: ["Dialogue", "Character", "Fiction"],
+    category: "Craft",
+    cover:
+      "https://images.unsplash.com/photo-1516414447565-b14be0adf13e?w=800&auto=format&fit=crop",
+    date: "2024-01-05",
     published: true,
     featured: false,
     readingTime: 7,
@@ -88,17 +94,19 @@ The best dialogue writers are keen observers of real conversation. They notice s
 3. Conflict drives compelling dialogue
 4. Read it aloud to test authenticity
 
-Remember: people rarely say exactly what they mean.`
+Remember: people rarely say exactly what they mean.`,
   },
   {
-    slug: 'the-writers-guide-to-research',
+    slug: "the-writers-guide-to-research",
     title: "The Writer's Guide to Effective Research",
-    excerpt: 'Master the research techniques that will add depth, authenticity, and credibility to your writing projects.',
-    author: 'Emily Rodriguez',
-    tags: ['Research', 'Non-fiction', 'Process'],
-    category: 'Process',
-    cover: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&auto=format&fit=crop',
-    date: '2023-12-28',
+    excerpt:
+      "Master the research techniques that will add depth, authenticity, and credibility to your writing projects.",
+    author: "Emily Rodriguez",
+    tags: ["Research", "Non-fiction", "Process"],
+    category: "Process",
+    cover:
+      "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&auto=format&fit=crop",
+    date: "2023-12-28",
     published: true,
     featured: false,
     readingTime: 9,
@@ -116,17 +124,19 @@ Research is the foundation of credible, engaging writing. Whether you're writing
 
 ## Balancing Research and Writing
 
-The challenge is knowing when to stop researching and start writing. Research should inform your work, not paralyze it.`
+The challenge is knowing when to stop researching and start writing. Research should inform your work, not paralyze it.`,
   },
   {
-    slug: 'overcoming-writers-block',
+    slug: "overcoming-writers-block",
     title: "Overcoming Writer's Block: Proven Strategies",
-    excerpt: "Practical techniques to break through creative barriers and reignite your passion for writing.",
-    author: 'James Chen',
-    tags: ['Productivity', 'Creativity', 'Mental Health'],
-    category: 'Process',
-    cover: 'https://images.unsplash.com/photo-1432821596592-e2c18b78144f?w=800&auto=format&fit=crop',
-    date: '2023-12-20',
+    excerpt:
+      "Practical techniques to break through creative barriers and reignite your passion for writing.",
+    author: "James Chen",
+    tags: ["Productivity", "Creativity", "Mental Health"],
+    category: "Process",
+    cover:
+      "https://images.unsplash.com/photo-1432821596592-e2c18b78144f?w=800&auto=format&fit=crop",
+    date: "2023-12-20",
     published: true,
     featured: false,
     readingTime: 5,
@@ -146,17 +156,19 @@ Writer's block isn't laziness—it's often perfectionism, fear, or creative exha
 4. **Set Small Goals**: 100 words is better than zero
 5. **Exercise**: Physical movement unlocks mental creativity
 
-Remember: writing is a practice, not a performance.`
+Remember: writing is a practice, not a performance.`,
   },
   {
-    slug: 'the-revision-process',
-    title: 'The Revision Process: Transforming Drafts into Masterpieces',
-    excerpt: 'Explore systematic approaches to revision that will elevate your writing from good to exceptional.',
-    author: 'Emily Rodriguez',
-    tags: ['Editing', 'Revision', 'Craft'],
-    category: 'Technique',
-    cover: 'https://images.unsplash.com/photo-1456324504439-367cee3b3c32?w=800&auto=format&fit=crop',
-    date: '2023-12-15',
+    slug: "the-revision-process",
+    title: "The Revision Process: Transforming Drafts into Masterpieces",
+    excerpt:
+      "Explore systematic approaches to revision that will elevate your writing from good to exceptional.",
+    author: "Emily Rodriguez",
+    tags: ["Editing", "Revision", "Craft"],
+    category: "Technique",
+    cover:
+      "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?w=800&auto=format&fit=crop",
+    date: "2023-12-15",
     published: true,
     featured: false,
     readingTime: 10,
@@ -177,10 +189,11 @@ Always let your work rest before revising. Distance provides perspective that im
 
 ## Getting Feedback
 
-Trusted readers can spot issues you're too close to see. Choose them wisely and listen with an open mind.`
-  }
+Trusted readers can spot issues you're too close to see. Choose them wisely and listen with an open mind.`,
+  },
 ];
 
-export const getFeaturedPosts = () => posts.filter(p => p.featured);
+export const getFeaturedPosts = () => posts.filter((p) => p.featured);
 export const getLatestPosts = (limit = 6) => posts.slice(0, limit);
-export const getPostBySlug = (slug: string) => posts.find(p => p.slug === slug);
+export const getPostBySlug = (slug: string) =>
+  posts.find((p) => p.slug === slug);

@@ -1,5 +1,5 @@
-import { AuthorCard } from '@/components/blog/AuthorCard';
-import { authors } from '@/data/authors';
+import { AuthorCard } from "@/components/blog/AuthorCard";
+import { authors } from "@/data/authors";
 
 export default function Authors() {
   return (
