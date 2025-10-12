@@ -218,7 +218,16 @@ function ShaderBackground() {
       >
         <ShaderPlane />
       </Canvas>
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/20" />
+      <div style={{
+        backgroundImage: 'linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2))',
+        bottom: 0,
+        fontWeight: 300,
+        left: 0,
+        pointerEvents: 'none',
+        position: 'absolute',
+        right: 0,
+        top: 0,
+      }} />
     </div>
   );
 }
@@ -305,9 +314,28 @@ export default function Hero({
     <section ref={sectionRef} className="relative h-screen w-screen overflow-hidden">
       <ShaderBackground />
 
-      <div className="relative mx-auto flex max-w-7xl flex-col items-center gap-6 px-6 pb-24 pt-36 sm:gap-8 sm:pt-44 md:px-10 lg:px-16 text-center">
+      <div className="relative mx-auto flex flex-col items-center text-center" style={{
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'column',
+        fontWeight: 300,
+        gap: '32px',
+        maxWidth: '1280px',
+        position: 'relative',
+        textAlign: 'center',
+        justifyContent: 'center',
+        margin: '160px auto 30px',
+        padding: '176px 64px 96px',
+      }}>
 
-        <h1 ref={headerRef} className="max-w-2xl mx-auto text-center text-5xl font-extralight leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl">
+        <h1 ref={headerRef} aria-label="Where algorithms become art." style={{
+          fontSize: '72px',
+          fontWeight: 200,
+          letterSpacing: '-1.8px',
+          lineHeight: '72px',
+          maxWidth: '672px',
+          margin: '0 auto',
+        }} className="text-white">
           {title}
         </h1>
 
