@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import { Author } from '@/types/blog';
 import { Github, Linkedin, Twitter } from 'lucide-react';
 
