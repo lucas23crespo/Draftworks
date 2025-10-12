@@ -10,8 +10,8 @@ export default function Index() {
   return (
     <>
       <NeuralNetworkHero
-        title="Where algorithms become art."
-        description="A minimal hero with a neural canvas — crisp, elegant, and quietly expressive. Built with React, Three.js, and a custom CPPN shader."
+        title="Draftworks: Where ideas find their voice."
+        description="A community for writers and readers — essays, guides, and thoughtful conversations about craft and storytelling."
         ctaButtons={[
           { text: "Get started", href: "/blog", primary: true },
           { text: "About us", href: "/about" },
