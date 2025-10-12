@@ -1,0 +1,220 @@
+import { useParams, Link } from 'react-router-dom';
+import { Calendar, Clock, Share2, ArrowLeft, User } from 'lucide-react';
+import { getPostBySlug, posts } from '@/data/posts';
+import { getAuthorById } from '@/data/authors';
+import { TagPill } from '@/components/blog/TagPill';
+import { CategoryPill } from '@/components/blog/CategoryPill';
+import { PostCard } from '@/components/blog/PostCard';
+import { useEffect, useState } from 'react';
+
+export default function Post() {
+  const { slug } = useParams<{ slug: string }>();
+  const post = slug ? getPostBySlug(slug) : null;
+  const author = post ? getAuthorById(post.author.toLowerCase().replace(/\s+/g, '-')) : null;
+  const [readProgress, setReadProgress] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = (window.scrollY / totalHeight) * 100;
+      setReadProgress(progress);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  if (!post) {
+    return (
+      <div className="pt-24 pb-20 px-6 min-h-screen">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h1 className="text-4xl font-bold mb-4">Post Not Found</h1>
+          <Link to="/blog" className="text-purple-400 hover:text-purple-300">
+            ← Back to Blog
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
+  const relatedPosts = posts
+    .filter(p => p.slug !== post.slug && (
+      p.category === post.category || 
+      p.tags.some(tag => post.tags.includes(tag))
+    ))
+    .slice(0, 3);
+
+  return (
+    <>
+      <div 
+        className="fixed top-0 left-0 h-1 bg-gradient-primary transition-all duration-200 z-50"
+        style={{ width: `${readProgress}%` }}
+      />
+      
+      <div className="pt-24 pb-20 px-6 min-h-screen">
+        <div className="container mx-auto max-w-4xl">
+          <Link 
+            to="/blog" 
+            className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 mb-8 transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back to Blog
+          </Link>
+
+          <article>
+            <div className="mb-8">
+              <div className="flex items-center gap-3 mb-4">
+                <CategoryPill category={post.category} />
+                <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                  <span className="flex items-center gap-1">
+                    <Calendar className="w-4 h-4" />
+                    {new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+                  </span>
+                  {post.readingTime && (
+                    <span className="flex items-center gap-1">
+                      <Clock className="w-4 h-4" />
+                      {post.readingTime} min read
+                    </span>
+                  )}
+                </div>
+              </div>
+
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight">
+                {post.title}
+              </h1>
+
+              <p className="text-xl text-muted-foreground mb-8">
+                {post.excerpt}
+              </p>
+
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  {author && (
+                    <>
+                      <img 
+                        src={author.avatar} 
+                        alt={author.name}
+                        className="w-12 h-12 rounded-full ring-2 ring-purple-500/30"
+                      />
+                      <div>
+                        <Link 
+                          to={`/authors/${author.id}`}
+                          className="font-semibold text-foreground hover:text-purple-400 transition-colors"
+                        >
+                          {author.name}
+                        </Link>
+                        <p className="text-sm text-muted-foreground">{author.role}</p>
+                      </div>
+                    </>
+                  )}
+                </div>
+
+                <button className="p-2 rounded-lg bg-card/60 border border-border hover:border-purple-500/50 transition-colors">
+                  <Share2 className="w-5 h-5" />
+                </button>
+              </div>
+            </div>
+
+            {post.cover && (
+              <div className="mb-12 rounded-xl overflow-hidden">
+                <img 
+                  src={post.cover} 
+                  alt={post.title}
+                  className="w-full aspect-video object-cover"
+                />
+              </div>
+            )}
+
+            <div className="prose prose-lg prose-invert max-w-none mb-12">
+              <div className="bg-card/30 backdrop-blur-sm border border-border rounded-xl p-8">
+                {post.content?.split('\n\n').map((paragraph, i) => {
+                  if (paragraph.startsWith('# ')) {
+                    return (
+                      <h1 key={i} className="text-3xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
+                        {paragraph.replace('# ', '')}
+                      </h1>
+                    );
+                  }
+                  if (paragraph.startsWith('## ')) {
+                    return (
+                      <h2 key={i} className="text-2xl font-bold mb-4 text-purple-400 mt-8">
+                        {paragraph.replace('## ', '')}
+                      </h2>
+                    );
+                  }
+                  if (paragraph.startsWith('- ')) {
+                    const items = paragraph.split('\n');
+                    return (
+                      <ul key={i} className="list-disc list-inside space-y-2 mb-6 text-muted-foreground">
+                        {items.map((item, j) => (
+                          <li key={j}>{item.replace('- ', '')}</li>
+                        ))}
+                      </ul>
+                    );
+                  }
+                  if (/^\d+\./.test(paragraph)) {
+                    const items = paragraph.split('\n');
+                    return (
+                      <ol key={i} className="list-decimal list-inside space-y-2 mb-6 text-muted-foreground">
+                        {items.map((item, j) => (
+                          <li key={j}>{item.replace(/^\d+\.\s/, '')}</li>
+                        ))}
+                      </ol>
+                    );
+                  }
+                  return (
+                    <p key={i} className="text-muted-foreground leading-relaxed mb-6">
+                      {paragraph}
+                    </p>
+                  );
+                })}
+              </div>
+            </div>
+
+            <div className="flex flex-wrap gap-2 mb-12">
+              {post.tags.map((tag) => (
+                <TagPill key={tag} tag={tag} />
+              ))}
+            </div>
+
+            {author && (
+              <div className="bg-card/60 backdrop-blur-sm border border-border rounded-xl p-8 mb-12">
+                <h3 className="text-lg font-semibold mb-4">About the Author</h3>
+                <div className="flex items-start gap-4">
+                  <img 
+                    src={author.avatar} 
+                    alt={author.name}
+                    className="w-20 h-20 rounded-full ring-2 ring-purple-500/30"
+                  />
+                  <div className="flex-1">
+                    <Link 
+                      to={`/authors/${author.id}`}
+                      className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+                    >
+                      {author.name}
+                    </Link>
+                    <p className="text-sm text-muted-foreground mb-2">{author.role}</p>
+                    <p className="text-sm text-muted-foreground">{author.bio}</p>
+                  </div>
+                </div>
+              </div>
+            )}
+          </article>
+
+          {relatedPosts.length > 0 && (
+            <div className="mt-20">
+              <h2 className="text-3xl font-bold mb-8 bg-gradient-primary bg-clip-text text-transparent">
+                Related Posts
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {relatedPosts.map((relatedPost) => (
+                  <PostCard key={relatedPost.slug} post={relatedPost} />
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </>
+  );
+}
