@@ -26,7 +26,7 @@ export default function Placeholder({ title, description }: PlaceholderProps) {
           <p className="mb-8 text-xl text-white/60">
             {description}
           </p>
-          <p className="text-white/55">
+          <p className="text-white/60">
             This page is coming soon. Continue exploring our content or let us know if you'd like us to prioritize this feature!
           </p>
           <div className="mt-8 flex gap-4 justify-center">
