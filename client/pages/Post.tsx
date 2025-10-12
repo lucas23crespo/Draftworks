@@ -126,18 +126,18 @@ export default function Post() {
             )}
 
             <div className="prose prose-lg prose-invert max-w-none mb-12">
-              <div className="bg-card/30 backdrop-blur-sm border border-border rounded-xl p-8">
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-8">
                 {post.content?.split('\n\n').map((paragraph, i) => {
                   if (paragraph.startsWith('# ')) {
                     return (
-                      <h1 key={i} className="text-3xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
+                      <h1 key={i} className="mb-6 text-3xl font-light text-white">
                         {paragraph.replace('# ', '')}
                       </h1>
                     );
                   }
                   if (paragraph.startsWith('## ')) {
                     return (
-                      <h2 key={i} className="text-2xl font-bold mb-4 text-purple-400 mt-8">
+                      <h2 key={i} className="mt-8 mb-4 text-2xl font-light text-white">
                         {paragraph.replace('## ', '')}
                       </h2>
                     );
@@ -145,7 +145,7 @@ export default function Post() {
                   if (paragraph.startsWith('- ')) {
                     const items = paragraph.split('\n');
                     return (
-                      <ul key={i} className="list-disc list-inside space-y-2 mb-6 text-muted-foreground">
+                      <ul key={i} className="mb-6 list-disc list-inside space-y-2 text-white/60">
                         {items.map((item, j) => (
                           <li key={j}>{item.replace('- ', '')}</li>
                         ))}
@@ -155,7 +155,7 @@ export default function Post() {
                   if (/^\d+\./.test(paragraph)) {
                     const items = paragraph.split('\n');
                     return (
-                      <ol key={i} className="list-decimal list-inside space-y-2 mb-6 text-muted-foreground">
+                      <ol key={i} className="mb-6 list-decimal list-inside space-y-2 text-white/60">
                         {items.map((item, j) => (
                           <li key={j}>{item.replace(/^\d+\.\s/, '')}</li>
                         ))}
@@ -163,7 +163,7 @@ export default function Post() {
                     );
                   }
                   return (
-                    <p key={i} className="text-muted-foreground leading-relaxed mb-6">
+                    <p key={i} className="mb-6 leading-relaxed text-white/65">
                       {paragraph}
                     </p>
                   );
