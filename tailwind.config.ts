@@ -14,6 +14,15 @@ export default {
     },
     extend: {
       colors: {
+        indigo: {
+          500: "#6366f1",
+        },
+        purple: {
+          500: "#8b5cf6",
+        },
+        pink: {
+          500: "#ec4899",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -57,6 +66,9 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      backgroundImage: {
+        'gradient-primary': 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%)',
       },
       borderRadius: {
         lg: "var(--radius)",
