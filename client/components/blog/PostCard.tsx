@@ -45,7 +45,7 @@ export function PostCard({ post, variant = 'default' }: PostCardProps) {
             {post.title}
           </h3>
           
-          <p className="text-white/55 text-sm mb-6 line-clamp-3">
+          <p className="mb-6 line-clamp-3 text-sm text-white/60">
             {post.excerpt}
           </p>
           
