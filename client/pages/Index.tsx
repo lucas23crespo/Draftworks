@@ -42,12 +42,12 @@ export default function Index() {
         <section className="py-20 px-6">
           <div className="container mx-auto max-w-7xl">
             <div className="flex items-center justify-between mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+              <h2 className="text-3xl md:text-4xl font-light text-white">
                 Featured Posts
               </h2>
-              <Link 
-                to="/blog" 
-                className="text-purple-400 hover:text-purple-300 transition-colors font-medium"
+              <Link
+                to="/blog"
+                className="text-white/50 hover:text-white transition-colors text-sm font-light tracking-tight"
               >
                 View All →
               </Link>
@@ -61,9 +61,9 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="py-20 px-6 bg-card/20 backdrop-blur-sm">
+        <section className="py-20 px-6">
           <div className="container mx-auto max-w-7xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 bg-gradient-primary bg-clip-text text-transparent text-center">
+            <h2 className="text-3xl md:text-4xl font-light text-white mb-12 text-center">
               Latest Posts
             </h2>
             
