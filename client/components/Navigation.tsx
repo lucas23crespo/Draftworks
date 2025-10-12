@@ -1,45 +1,46 @@
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 
+const navLinks = [
+  { href: '/', label: 'Home' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Contact' },
+];
+
 export function Navigation() {
   const location = useLocation();
 
-  const navLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/blog', label: 'Blog' },
-    { href: '/authors', label: 'Authors' },
-    { href: '/categories', label: 'Categories' },
-    { href: '/about', label: 'About' },
-    { href: '/contact', label: 'Contact' },
-  ];
-
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
-      <div className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
-          <Link to="/" className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-            Digital Writing Studio
-          </Link>
-          
-          <div className="flex gap-8">
-            {navLinks.map((link) => (
+    <nav className="fixed inset-x-0 top-6 z-50 flex justify-center px-4">
+      <div className="flex items-center gap-6 rounded-full border border-white/10 bg-black/60 px-6 py-3 shadow-[0_10px_40px_rgba(0,0,0,0.35)] backdrop-blur-2xl">
+        <Link to="/" className="flex items-center gap-1 pr-4 text-sm font-medium text-white/70">
+          <span className="grid h-6 w-6 grid-cols-2 gap-1 rounded-full border border-white/10 p-1">
+            <span className="h-full w-full rounded-full bg-white/40" />
+            <span className="h-full w-full rounded-full bg-white/20" />
+            <span className="h-full w-full rounded-full bg-white/20" />
+            <span className="h-full w-full rounded-full bg-white/10" />
+          </span>
+          Digital Writing Studio
+        </Link>
+
+        <div className="flex items-center gap-2">
+          {navLinks.map((link) => {
+            const isActive = location.pathname === link.href;
+
+            return (
               <Link
                 key={link.href}
                 to={link.href}
                 className={cn(
-                  "relative px-3 py-2 text-sm font-medium transition-colors hover:text-purple-500",
-                  location.pathname === link.href
-                    ? "text-purple-500"
-                    : "text-foreground"
+                  'rounded-full px-4 py-2 text-sm font-light tracking-tight text-white/70 transition-colors focus:outline-none focus:ring-2 focus:ring-white/30',
+                  isActive ? 'bg-white/10 text-white shadow-[0_0_0_1px_rgba(255,255,255,0.15)]' : 'hover:bg-white/5 hover:text-white'
                 )}
               >
                 {link.label}
-                {location.pathname === link.href && (
-                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-primary" />
-                )}
               </Link>
-            ))}
-          </div>
+            );
+          })}
         </div>
       </div>
     </nav>
