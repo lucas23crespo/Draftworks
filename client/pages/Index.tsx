@@ -101,7 +101,7 @@ export default function Index() {
 
         <section className="py-20 px-6">
           <div className="container mx-auto max-w-7xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-white font-sans text-center">
+            <h2 className="text-3xl md:text-4xl font-light text-white mb-12 text-center">
               About our community
             </h2>
             
