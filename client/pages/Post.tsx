@@ -46,8 +46,8 @@ export default function Post() {
 
   return (
     <>
-      <div 
-        className="fixed top-0 left-0 h-1 bg-gradient-primary transition-all duration-200 z-50"
+      <div
+        className="fixed top-0 left-0 z-50 h-1 bg-white/30 transition-all duration-200"
         style={{ width: `${readProgress}%` }}
       />
       
@@ -65,7 +65,7 @@ export default function Post() {
             <div className="mb-8">
               <div className="flex items-center gap-3 mb-4">
                 <CategoryPill category={post.category} />
-                <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                <div className="flex items-center gap-4 text-sm text-white/40">
                   <span className="flex items-center gap-1">
                     <Calendar className="w-4 h-4" />
                     {new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
@@ -79,11 +79,11 @@ export default function Post() {
                 </div>
               </div>
 
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight">
+              <h1 className="text-4xl md:text-5xl font-light text-white mb-6 leading-tight">
                 {post.title}
               </h1>
 
-              <p className="text-xl text-muted-foreground mb-8">
+              <p className="text-xl text-white/60 mb-8">
                 {post.excerpt}
               </p>
 
@@ -94,29 +94,29 @@ export default function Post() {
                       <img 
                         src={author.avatar} 
                         alt={author.name}
-                        className="w-12 h-12 rounded-full ring-2 ring-purple-500/30"
+                        className="h-12 w-12 rounded-full ring-2 ring-white/20"
                       />
                       <div>
                         <Link 
                           to={`/authors/${author.id}`}
-                          className="font-semibold text-foreground hover:text-purple-400 transition-colors"
+                          className="text-sm font-light tracking-tight text-white transition-colors hover:text-white"
                         >
                           {author.name}
                         </Link>
-                        <p className="text-sm text-muted-foreground">{author.role}</p>
+                        <p className="text-sm text-white/50">{author.role}</p>
                       </div>
                     </>
                   )}
                 </div>
 
-                <button className="p-2 rounded-lg bg-card/60 border border-border hover:border-purple-500/50 transition-colors">
+                <button className="rounded-lg border border-white/10 bg-white/5 p-2 transition-colors hover:bg-white/10">
                   <Share2 className="w-5 h-5" />
                 </button>
               </div>
             </div>
 
             {post.cover && (
-              <div className="mb-12 rounded-xl overflow-hidden">
+              <div className="mb-12 overflow-hidden rounded-2xl border border-white/10">
                 <img 
                   src={post.cover} 
                   alt={post.title}
