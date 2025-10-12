@@ -171,30 +171,30 @@ export default function Post() {
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-2 mb-12">
+            <div className="mb-12 flex flex-wrap gap-2">
               {post.tags.map((tag) => (
                 <TagPill key={tag} tag={tag} />
               ))}
             </div>
 
             {author && (
-              <div className="bg-card/60 backdrop-blur-sm border border-border rounded-xl p-8 mb-12">
-                <h3 className="text-lg font-semibold mb-4">About the Author</h3>
+              <div className="mb-12 rounded-2xl border border-white/10 bg-white/5 p-8">
+                <h3 className="mb-4 text-lg font-light text-white">About the Author</h3>
                 <div className="flex items-start gap-4">
-                  <img 
-                    src={author.avatar} 
+                  <img
+                    src={author.avatar}
                     alt={author.name}
-                    className="w-20 h-20 rounded-full ring-2 ring-purple-500/30"
+                    className="h-20 w-20 rounded-full ring-2 ring-white/20"
                   />
                   <div className="flex-1">
-                    <Link 
+                    <Link
                       to={`/authors/${author.id}`}
-                      className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+                      className="text-xl font-light text-white transition-opacity hover:opacity-80"
                     >
                       {author.name}
                     </Link>
-                    <p className="text-sm text-muted-foreground mb-2">{author.role}</p>
-                    <p className="text-sm text-muted-foreground">{author.bio}</p>
+                    <p className="text-sm text-white/50 mb-2">{author.role}</p>
+                    <p className="text-sm text-white/60">{author.bio}</p>
                   </div>
                 </div>
               </div>
