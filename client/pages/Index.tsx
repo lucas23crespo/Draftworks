@@ -77,22 +77,22 @@ export default function Index() {
 
         <section className="py-20 px-6">
           <div className="container mx-auto max-w-4xl">
-            <div className="bg-card/60 backdrop-blur-sm border border-border rounded-2xl p-12 text-center">
-              <h2 className="text-3xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-12 text-center">
+              <h2 className="text-3xl font-light text-white mb-4">
                 Join Our Newsletter
               </h2>
-              <p className="text-muted-foreground mb-8">
+              <p className="text-white/60 mb-8">
                 Get the latest writing insights, tips, and stories delivered to your inbox.
               </p>
               <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="flex-1 px-4 py-3 rounded-lg bg-input border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="flex-1 rounded-lg border border-white/15 bg-white/5 px-4 py-3 text-sm text-white/80 placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-white/20"
                 />
                 <button
                   type="submit"
-                  className="px-6 py-3 bg-gradient-primary text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/30"
+                  className="px-6 py-3 rounded-lg border border-white/15 text-sm font-light uppercase tracking-[0.18em] text-white/80 transition-all duration-300 hover:bg-white/10 hover:text-white"
                 >
                   Subscribe
                 </button>
