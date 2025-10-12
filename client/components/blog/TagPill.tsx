@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 
 interface TagPillProps {
@@ -12,9 +13,9 @@ export function TagPill({ tag, variant = 'default', className }: TagPillProps) {
     <Link
       to={`/tags/${tag.toLowerCase().replace(/\s+/g, '-')}`}
       className={cn(
-        "inline-block px-3 py-1 text-xs font-medium rounded-full transition-colors",
-        variant === 'default' && "bg-purple-500/20 text-purple-400 hover:bg-purple-500/30",
-        variant === 'outline' && "border border-purple-500/30 text-purple-400 hover:border-purple-500/50",
+        "inline-block rounded-full px-3 py-1 text-[11px] font-light uppercase tracking-[0.3em] transition-colors",
+        variant === 'default' && "border border-white/15 bg-white/5 text-white/60 hover:bg-white/10 hover:text-white",
+        variant === 'outline' && "border border-white/10 text-white/60 hover:border-white/20 hover:text-white",
         className
       )}
     >
