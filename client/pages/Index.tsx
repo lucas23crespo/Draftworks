@@ -21,7 +21,7 @@ export default function Index() {
       <div className="relative z-10 -mt-24 min-h-screen">
         <section className="pt-32 pb-20 px-6">
           <div className="container mx-auto max-w-4xl text-center">
-            <h1 className="text-5xl md:text-7xl font-light text-white mb-6 leading-tight">
+            <h1 style={{ paddingTop: '65px' }} className="text-5xl md:text-7xl font-light text-white mb-6 leading-tight">
               Digital Writing Studio
             </h1>
             <p className="text-xl md:text-2xl text-white/70 mb-8">
