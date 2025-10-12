@@ -175,7 +175,7 @@ function ShaderPlane() {
 
   return (
     <mesh ref={meshRef} position={[0, -0.75, -0.5]}>
-      <planeGeometry args={[4, 4]} />
+      <planeGeometry args={[8, 8]} />
       <cPPNShaderMaterial ref={materialRef} side={THREE.DoubleSide} />
     </mesh>
   );
@@ -214,7 +214,7 @@ function ShaderBackground() {
         camera={camera}
         gl={{ antialias: true, alpha: false }}
         dpr={[1, 2]}
-        style={{ width: '100%', height: '100%' }}
+        style={{ width: '100vw', height: '100vh' }}
       >
         <ShaderPlane />
       </Canvas>
@@ -305,17 +305,17 @@ export default function Hero({
     <section ref={sectionRef} className="relative h-screen w-screen overflow-hidden">
       <ShaderBackground />
 
-      <div className="relative mx-auto flex max-w-7xl flex-col items-start gap-6 px-6 pb-24 pt-36 sm:gap-8 sm:pt-44 md:px-10 lg:px-16">
+      <div className="relative mx-auto flex max-w-7xl flex-col items-center gap-6 px-6 pb-24 pt-36 sm:gap-8 sm:pt-44 md:px-10 lg:px-16 text-center">
 
-        <h1 ref={headerRef} className="max-w-2xl text-left text-5xl font-extralight leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl">
+        <h1 ref={headerRef} className="max-w-2xl mx-auto text-center text-5xl font-extralight leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl">
           {title}
         </h1>
 
-        <p ref={paraRef} className="max-w-xl text-left text-base font-light leading-relaxed tracking-tight text-white/75 sm:text-lg">
+        <p ref={paraRef} className="max-w-xl mx-auto text-center text-base font-light leading-relaxed tracking-tight text-white/75 sm:text-lg">
           {description}
         </p>
 
-        <div ref={ctaRef} className="flex flex-wrap items-center gap-3 pt-2">
+        <div ref={ctaRef} className="flex flex-wrap items-center justify-center gap-3 pt-2">
           {ctaButtons.map((button, index) => (
             <a
               key={index}
