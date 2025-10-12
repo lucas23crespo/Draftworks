@@ -1,5 +1,7 @@
 import { Mail, Send } from 'lucide-react';
 
+import { Mail, Send } from 'lucide-react';
+
 export default function Contact() {
   return (
     <div className="min-h-screen px-6 pt-32 pb-20">
