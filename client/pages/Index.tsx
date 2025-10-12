@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { NeuralNetworkHero } from '@/components/NeuralNetworkHero';
+import { Hero } from '@/components/Hero';
 import { PostCard } from '@/components/blog/PostCard';
 import { getFeaturedPosts, getLatestPosts } from '@/data/posts';
 
@@ -9,7 +9,7 @@ export default function Index() {
 
   return (
     <>
-      <NeuralNetworkHero />
+      <Hero />
       
       <div className="relative z-10 min-h-screen">
         <section className="pt-32 pb-20 px-6">
