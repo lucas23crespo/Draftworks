@@ -7,13 +7,13 @@ export default function About() {
         </h1>
 
         <div className="space-y-6 rounded-2xl border border-white/10 bg-white/5 p-8 md:p-12">
-          <p className="text-lg text-white/65 leading-relaxed">
+          <p className="text-lg text-white/70 leading-relaxed">
             Welcome to our Digital Writing Studio, a space dedicated to exploring the intricate world of writing, 
             language, and rhetoric. This blog is more than just a collection of posts—it's a living, breathing 
             conversation about what it means to write in the modern age.
           </p>
 
-          <p className="text-lg text-white/65 leading-relaxed">
+          <p className="text-lg text-white/70 leading-relaxed">
             Here, we dive deep into the perspectives of established writers, analyze their approaches to language, 
             and reflect on the craft that binds us all together. Each post is carefully crafted to share insights, 
             spark discussions, and engage with the vibrant community of writers and thinkers.
@@ -53,7 +53,7 @@ export default function About() {
             </div>
           </div>
 
-          <p className="text-lg text-white/65 leading-relaxed">
+          <p className="text-lg text-white/70 leading-relaxed">
             We believe that writing is both deeply personal and inherently communal—a dialogue between past and 
             present, writer and reader. This studio embodies that philosophy, providing a platform for exploration, 
             learning, and meaningful exchange.
