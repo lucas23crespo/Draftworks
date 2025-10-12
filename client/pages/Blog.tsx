@@ -29,38 +29,38 @@ export default function Blog() {
   }, [searchQuery, selectedCategory, selectedTag]);
 
   return (
-    <div className="pt-24 pb-20 px-6 min-h-screen">
+    <div className="min-h-screen px-6 pt-32 pb-20">
       <div className="container mx-auto max-w-7xl">
         <div className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
+          <h1 className="mb-4 text-4xl font-light text-white md:text-5xl">
             All Posts
           </h1>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-white/60">
             Explore our collection of writing insights and stories
           </p>
         </div>
 
         <div className="mb-12 space-y-6">
           <div className="relative">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
+            <Search className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-white/30" />
             <input
               type="text"
               placeholder="Search posts..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-12 pr-4 py-4 rounded-xl bg-card/60 backdrop-blur-sm border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-purple-500"
+              className="w-full rounded-2xl border border-white/10 bg-white/5 px-12 py-4 text-sm text-white/70 placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-white/20"
             />
           </div>
 
           <div className="flex flex-wrap gap-4">
             <div className="flex items-center gap-2">
-              <span className="text-sm text-muted-foreground font-medium">Categories:</span>
+              <span className="text-xs font-light uppercase tracking-[0.3em] text-white/40">Categories</span>
               <button
                 onClick={() => setSelectedCategory(null)}
-                className={`px-3 py-1 text-xs font-semibold rounded-md transition-colors ${
-                  !selectedCategory 
-                    ? 'bg-purple-500 text-white' 
-                    : 'bg-card/60 text-muted-foreground hover:bg-card'
+                className={`rounded-full px-4 py-2 text-[11px] font-light uppercase tracking-[0.25em] transition-colors ${
+                  !selectedCategory
+                    ? 'bg-white/10 text-white'
+                    : 'border border-white/10 text-white/50 hover:bg-white/5'
                 }`}
               >
                 All
@@ -69,10 +69,10 @@ export default function Blog() {
                 <button
                   key={cat.id}
                   onClick={() => setSelectedCategory(cat.name)}
-                  className={`px-3 py-1 text-xs font-semibold rounded-md transition-colors ${
+                  className={`rounded-full px-4 py-2 text-[11px] font-light uppercase tracking-[0.25em] transition-colors ${
                     selectedCategory === cat.name
-                      ? 'bg-indigo-500 text-white'
-                      : 'bg-indigo-500/20 text-indigo-400 hover:bg-indigo-500/30'
+                      ? 'bg-white/10 text-white'
+                      : 'border border-white/10 text-white/50 hover:bg-white/5'
                   }`}
                 >
                   {cat.name} ({cat.count})
@@ -82,13 +82,13 @@ export default function Blog() {
           </div>
 
           <div className="flex flex-wrap gap-2">
-            <span className="text-sm text-muted-foreground font-medium self-center">Tags:</span>
+            <span className="self-center text-xs font-light uppercase tracking-[0.3em] text-white/40">Tags</span>
             <button
               onClick={() => setSelectedTag(null)}
-              className={`px-3 py-1 text-xs font-medium rounded-full transition-colors ${
+              className={`rounded-full px-3 py-1 text-[11px] font-light uppercase tracking-[0.25em] transition-colors ${
                 !selectedTag
-                  ? 'bg-purple-500 text-white'
-                  : 'border border-purple-500/30 text-purple-400 hover:border-purple-500/50'
+                  ? 'bg-white/10 text-white'
+                  : 'border border-white/10 text-white/50 hover:bg-white/5'
               }`}
             >
               All
@@ -97,10 +97,10 @@ export default function Blog() {
               <button
                 key={tag}
                 onClick={() => setSelectedTag(tag)}
-                className={`px-3 py-1 text-xs font-medium rounded-full transition-colors ${
+                className={`rounded-full px-3 py-1 text-[11px] font-light uppercase tracking-[0.25em] transition-colors ${
                   selectedTag === tag
-                    ? 'bg-purple-500 text-white'
-                    : 'border border-purple-500/30 text-purple-400 hover:border-purple-500/50'
+                    ? 'bg-white/10 text-white'
+                    : 'border border-white/10 text-white/50 hover:bg-white/5'
                 }`}
               >
                 {tag}
@@ -110,18 +110,18 @@ export default function Blog() {
         </div>
 
         {filteredPosts.length === 0 ? (
-          <div className="text-center py-20">
-            <p className="text-xl text-muted-foreground">No posts found matching your criteria.</p>
+          <div className="py-20 text-center">
+            <p className="text-xl text-white/60">No posts found matching your criteria.</p>
           </div>
         ) : (
           <>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
               {filteredPosts.map((post) => (
                 <PostCard key={post.slug} post={post} />
               ))}
             </div>
 
-            <div className="mt-12 text-center text-sm text-muted-foreground">
+            <div className="mt-12 text-center text-sm text-white/40">
               Showing {filteredPosts.length} of {posts.length} posts
             </div>
           </>
