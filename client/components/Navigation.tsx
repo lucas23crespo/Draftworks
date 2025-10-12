@@ -21,7 +21,7 @@ export function Navigation() {
             <span className="h-full w-full rounded-full bg-white/20" />
             <span className="h-full w-full rounded-full bg-white/10" />
           </span>
-          Digital Writing Studio
+          Draftworks
         </Link>
 
         <div className="flex items-center gap-2">
