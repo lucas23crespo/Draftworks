@@ -203,10 +203,10 @@ export default function Post() {
 
           {relatedPosts.length > 0 && (
             <div className="mt-20">
-              <h2 className="text-3xl font-bold mb-8 bg-gradient-primary bg-clip-text text-transparent">
+              <h2 className="mb-8 text-3xl font-light text-white">
                 Related Posts
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
                 {relatedPosts.map((relatedPost) => (
                   <PostCard key={relatedPost.slug} post={relatedPost} />
                 ))}
