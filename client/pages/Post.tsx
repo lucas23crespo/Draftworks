@@ -1,11 +1,12 @@
 import { useParams, Link } from 'react-router-dom';
-import { Calendar, Clock, Share2, ArrowLeft, User } from 'lucide-react';
+import { Link, useParams } from 'react-router-dom';
+import { Calendar, Clock, Share2, ArrowLeft } from 'lucide-react';
+import { useEffect, useState } from 'react';
 import { getPostBySlug, posts } from '@/data/posts';
 import { getAuthorById } from '@/data/authors';
 import { TagPill } from '@/components/blog/TagPill';
 import { CategoryPill } from '@/components/blog/CategoryPill';
 import { PostCard } from '@/components/blog/PostCard';
-import { useEffect, useState } from 'react';
 
 export default function Post() {
   const { slug } = useParams<{ slug: string }>();
@@ -26,10 +27,10 @@ export default function Post() {
 
   if (!post) {
     return (
-      <div className="pt-24 pb-20 px-6 min-h-screen">
+      <div className="min-h-screen px-6 pt-24 pb-20">
         <div className="container mx-auto max-w-4xl text-center">
-          <h1 className="text-4xl font-bold mb-4">Post Not Found</h1>
-          <Link to="/blog" className="text-purple-400 hover:text-purple-300">
+          <h1 className="mb-4 text-4xl font-light text-white">Post Not Found</h1>
+          <Link to="/blog" className="text-white/60 transition-colors hover:text-white">
             ← Back to Blog
           </Link>
         </div>
@@ -54,8 +55,8 @@ export default function Post() {
       <div className="pt-24 pb-20 px-6 min-h-screen">
         <div className="container mx-auto max-w-4xl">
           <Link 
-            to="/blog" 
-            className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 mb-8 transition-colors"
+            to="/blog"
+            className="mb-8 inline-flex items-center gap-2 text-white/60 transition-colors hover:text-white"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Blog
@@ -65,7 +66,7 @@ export default function Post() {
             <div className="mb-8">
               <div className="flex items-center gap-3 mb-4">
                 <CategoryPill category={post.category} />
-                <div className="flex items-center gap-4 text-sm text-white/40">
+                <div className="flex items-center gap-4 text-xs text-white/40">
                   <span className="flex items-center gap-1">
                     <Calendar className="w-4 h-4" />
                     {new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
