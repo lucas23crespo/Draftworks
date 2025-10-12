@@ -164,7 +164,7 @@ export default function Post() {
                     );
                   }
                   return (
-                    <p key={i} className="mb-6 leading-relaxed text-white/65">
+                    <p key={i} className="mb-6 leading-relaxed text-white/70">
                       {paragraph}
                     </p>
                   );
