@@ -108,34 +108,34 @@ export default function Index() {
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="bg-card/60 backdrop-blur-sm border border-border rounded-xl p-6 transition-all duration-300 hover:border-purple-500/50 hover:-translate-y-1">
+              <div className="rounded-xl border border-white/10 bg-white/5 p-6 transition-transform duration-300 hover:-translate-y-1">
                 <div className="text-4xl mb-3">✍️</div>
-                <h3 className="text-xl font-bold text-purple-400 mb-2">Thoughtful Analysis</h3>
-                <p className="text-sm text-muted-foreground">
+                <h3 className="text-xl font-light text-white mb-2">Thoughtful Analysis</h3>
+                <p className="text-sm text-white/60">
                   Deep explorations of what writers say about their craft and storytelling
                 </p>
               </div>
               
-              <div className="bg-card/60 backdrop-blur-sm border border-border rounded-xl p-6 transition-all duration-300 hover:border-purple-500/50 hover:-translate-y-1">
+              <div className="rounded-xl border border-white/10 bg-white/5 p-6 transition-transform duration-300 hover:-translate-y-1">
                 <div className="text-4xl mb-3">💡</div>
-                <h3 className="text-xl font-bold text-purple-400 mb-2">Fresh Perspectives</h3>
-                <p className="text-sm text-muted-foreground">
+                <h3 className="text-xl font-light text-white mb-2">Fresh Perspectives</h3>
+                <p className="text-sm text-white/60">
                   Unique takes on language, rhetoric, and contemporary writing practices
                 </p>
               </div>
               
-              <div className="bg-card/60 backdrop-blur-sm border border-border rounded-xl p-6 transition-all duration-300 hover:border-purple-500/50 hover:-translate-y-1">
+              <div className="rounded-xl border border-white/10 bg-white/5 p-6 transition-transform duration-300 hover:-translate-y-1">
                 <div className="text-4xl mb-3">📚</div>
-                <h3 className="text-xl font-bold text-purple-400 mb-2">Continuous Learning</h3>
-                <p className="text-sm text-muted-foreground">
+                <h3 className="text-xl font-light text-white mb-2">Continuous Learning</h3>
+                <p className="text-sm text-white/60">
                   Reflections on growth, challenges, and discoveries in the writing journey
                 </p>
               </div>
               
-              <div className="bg-card/60 backdrop-blur-sm border border-border rounded-xl p-6 transition-all duration-300 hover:border-purple-500/50 hover:-translate-y-1">
+              <div className="rounded-xl border border-white/10 bg-white/5 p-6 transition-transform duration-300 hover:-translate-y-1">
                 <div className="text-4xl mb-3">🔗</div>
-                <h3 className="text-xl font-bold text-purple-400 mb-2">Community Connection</h3>
-                <p className="text-sm text-muted-foreground">
+                <h3 className="text-xl font-light text-white mb-2">Community Connection</h3>
+                <p className="text-sm text-white/60">
                   Building bridges between writers, readers, and the ideas that inspire us
                 </p>
               </div>
