@@ -3,18 +3,18 @@ import { authors } from '@/data/authors';
 
 export default function Authors() {
   return (
-    <div className="pt-24 pb-20 px-6 min-h-screen">
+    <div className="min-h-screen px-6 pt-32 pb-20">
       <div className="container mx-auto max-w-7xl">
         <div className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
+          <h1 className="mb-4 text-4xl font-light text-white md:text-5xl">
             Our Authors
           </h1>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-white/60">
             Meet the talented writers behind our stories
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {authors.map((author) => (
             <AuthorCard key={author.id} author={author} />
           ))}
