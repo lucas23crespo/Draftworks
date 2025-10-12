@@ -22,7 +22,7 @@ export default function Index() {
         <section className="pt-32 pb-20 px-6">
           <div className="container mx-auto max-w-4xl text-center">
             <h1 style={{ paddingTop: '65px' }} className="text-5xl md:text-7xl font-light text-white mb-6 leading-tight">
-              Digital Writing Studio
+              Draftworks
             </h1>
             <p className="text-xl md:text-2xl text-white/70 mb-8">
               Welcome to a space where ideas converge, creativity flows, and every word matters.
