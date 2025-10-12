@@ -1,4 +1,3 @@
-import { useParams, Link } from 'react-router-dom';
 import { Link, useParams } from 'react-router-dom';
 import { Calendar, Clock, Share2, ArrowLeft } from 'lucide-react';
 import { useEffect, useState } from 'react';
