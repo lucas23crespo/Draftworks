@@ -43,11 +43,10 @@ export default function About() {
             <div className="rounded-xl border border-white/10 bg-white/5 p-6">
               <div className="text-4xl mb-3">📚</div>
               <h3 className="mb-2 text-xl font-light text-white">
-                Continuous Learning
+                Writing Exercises
               </h3>
               <p className="text-white/60">
-                Reflections on growth, challenges, and discoveries in the
-                writing journey
+                Prompts, exercises, and revision techniques to build your skills
               </p>
             </div>
 
