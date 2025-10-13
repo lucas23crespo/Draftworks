@@ -114,10 +114,8 @@ export default function Contact() {
 
         <div className="mt-12 rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
           <p className="text-white/60">
-            Your thoughts and feedback help shape this community. Don't hesitate
-            to share your ideas, ask questions, or simply say hello. Every
-            conversation enriches our collective understanding of the writing
-            craft.
+            Your feedback helps us improve the site and produce useful writing
+            content. Send questions, topic suggestions, or guest post pitches.
           </p>
         </div>
       </div>
