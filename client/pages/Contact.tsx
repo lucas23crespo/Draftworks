@@ -30,10 +30,10 @@ export default function Contact() {
                     Email
                   </p>
                   <a
-                    href="mailto:contact@digitalwritingstudio.com"
+                    href="mailto:contact@draftworks.blog"
                     className="text-white/70 transition-colors hover:text-white"
                   >
-                    contact@digitalwritingstudio.com
+                    contact@draftworks.blog
                   </a>
                 </div>
               </div>
