@@ -10,7 +10,8 @@ export default function About() {
           <p className="text-lg text-white/70 leading-relaxed">
             Welcome to Draftworks, a blog focused on writing, language, and
             craft. We publish essays, practical guides, and author interviews
-            that help writers improve their work and think clearly about process.
+            that help writers improve their work and think clearly about
+            process.
           </p>
 
           <p className="text-lg text-white/70 leading-relaxed">
@@ -26,7 +27,8 @@ export default function About() {
                 In-depth Essays
               </h3>
               <p className="text-white/60">
-                Long-form essays and analysis focused on writing techniques and examples
+                Long-form essays and analysis focused on writing techniques and
+                examples
               </p>
             </div>
 
@@ -36,7 +38,8 @@ export default function About() {
                 Practical Tips
               </h3>
               <p className="text-white/60">
-                Actionable advice and techniques for drafting, editing, and clarity
+                Actionable advice and techniques for drafting, editing, and
+                clarity
               </p>
             </div>
 
@@ -62,9 +65,9 @@ export default function About() {
           </div>
 
           <p className="text-lg text-white/70 leading-relaxed">
-            Draftworks aims to be a useful resource for writers—clear, practical,
-            and grounded in examples. If you read something helpful, consider
-            subscribing or sharing with other writers.
+            Draftworks aims to be a useful resource for writers—clear,
+            practical, and grounded in examples. If you read something helpful,
+            consider subscribing or sharing with other writers.
           </p>
         </div>
       </div>
