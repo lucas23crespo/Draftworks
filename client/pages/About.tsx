@@ -53,20 +53,18 @@ export default function About() {
             <div className="rounded-xl border border-white/10 bg-white/5 p-6">
               <div className="text-4xl mb-3">🔗</div>
               <h3 className="mb-2 text-xl font-light text-white">
-                Community Connection
+                Author Interviews
               </h3>
               <p className="text-white/60">
-                Building bridges between writers, readers, and the ideas that
-                inspire us
+                Conversations with writers about process, routines, and advice
               </p>
             </div>
           </div>
 
           <p className="text-lg text-white/70 leading-relaxed">
-            We believe that writing is both deeply personal and inherently
-            communal—a dialogue between past and present, writer and reader.
-            This studio embodies that philosophy, providing a platform for
-            exploration, learning, and meaningful exchange.
+            Draftworks aims to be a useful resource for writers—clear, practical,
+            and grounded in examples. If you read something helpful, consider
+            subscribing or sharing with other writers.
           </p>
         </div>
       </div>
