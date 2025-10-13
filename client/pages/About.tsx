@@ -8,19 +8,15 @@ export default function About() {
 
         <div className="space-y-6 rounded-2xl border border-white/10 bg-white/5 p-8 md:p-12">
           <p className="text-lg text-white/70 leading-relaxed">
-            Welcome to our Digital Writing Studio, a space dedicated to
-            exploring the intricate world of writing, language, and rhetoric.
-            This blog is more than just a collection of posts—it's a living,
-            breathing conversation about what it means to write in the modern
-            age.
+            Welcome to Draftworks, a blog focused on writing, language, and
+            craft. We publish essays, practical guides, and author interviews
+            that help writers improve their work and think clearly about process.
           </p>
 
           <p className="text-lg text-white/70 leading-relaxed">
-            Here, we dive deep into the perspectives of established writers,
-            analyze their approaches to language, and reflect on the craft that
-            binds us all together. Each post is carefully crafted to share
-            insights, spark discussions, and engage with the vibrant community
-            of writers and thinkers.
+            Our posts focus on craft, revision, and practical techniques you can
+            apply to your own writing. Whether you're drafting fiction, essays,
+            or practical guides, you'll find clear advice and examples here.
           </p>
 
           <div className="my-12 grid grid-cols-1 gap-6 md:grid-cols-2">
