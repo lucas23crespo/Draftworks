@@ -23,11 +23,10 @@ export default function About() {
             <div className="rounded-xl border border-white/10 bg-white/5 p-6">
               <div className="text-4xl mb-3">✍️</div>
               <h3 className="mb-2 text-xl font-light text-white">
-                Thoughtful Analysis
+                In-depth Essays
               </h3>
               <p className="text-white/60">
-                Deep explorations of what writers say about their craft and the
-                art of storytelling
+                Long-form essays and analysis focused on writing techniques and examples
               </p>
             </div>
 
