@@ -36,34 +36,18 @@ The future of storytelling lies in embracing both tradition and innovation, craf
   },
   {
     slug: "the-power-of-minimalist-writing",
-    title: "The Power of Minimalist Writing: Less is More",
-    excerpt:
-      "Discover how stripping away unnecessary words can amplify your message and create more impactful prose.",
-    author: "James Chen",
-    tags: ["Minimalism", "Style", "Editing"],
-    category: "Technique",
+    title: "The 2000s Are the New Vintage",
+    excerpt: "",
+    author: "Matthew Valero",
+    tags: [],
+    category: "Music",
     cover:
-      "https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?w=800&auto=format&fit=crop",
-    date: "2024-01-10",
+      "https://cdn.builder.io/api/v1/image/assets%2F8bc7a632da45401e992b4965a5d2c233%2Fc4a0d619e62d445cad2804235737cabf",
+    date: "2025-10-19",
     published: true,
     featured: true,
-    readingTime: 6,
-    content: `# The Power of Minimalist Writing
-
-Ernest Hemingway once said, "Write hard and clear about what hurts." This philosophy embodies the essence of minimalist writing—conveying maximum meaning with minimum words.
-
-## Why Less is More
-
-Every word should earn its place on the page. Minimalist writing forces authors to distill their ideas to their purest form, creating prose that resonates more deeply with readers.
-
-## Practical Techniques
-
-- Remove redundant modifiers
-- Use strong, specific verbs
-- Eliminate filler words
-- Trust your reader's intelligence
-
-The art of omission is often more powerful than the art of inclusion.`,
+    readingTime: 1,
+    content: `Sampling always meant more than duplicating sounds; it was about the emotion. Many producers look to nostalgic records because they relate immediately to the listener. When you hear familiar melodies or drum patterns, you are quickly transported to a place, a memory or even a feeling you didn't know you had. This feeling of recognition gives deeper meaning to the music. In the '90s, artists sampled soul and funk records that their parents had grown up with. In the 2010s, many producers took the cue from the '80s synth-wave sound. Now in 2025, we are seeing the trend toward nostalgia for the '00s. Early Usher, Nelly, Timbaland or even pop-punk guitar riffs are chopped up, pitched and reimagined. For Gen Z, who have these records played on MTV and by mom and dad in the car with the radio tuned in, the same sounds in new records are both familiar and fresh. Sampling the records from the 2000s is not just a trend but indicative of the idea that music is cyclical. What was once "last decade's music" now becomes vintage fuel for creativity. The next classics ultimately will arise from the classics we grew up with.`,
   },
   {
     slug: "building-authentic-dialogue",
