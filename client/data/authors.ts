@@ -15,14 +15,13 @@ export const authors: Author[] = [
   },
   {
     id: "james-chen",
-    name: "James Chen",
-    bio: "Minimalist writer and editor specializing in clarity and concision. Former journalist turned creative writing coach.",
+    name: "Matthew Valero",
+    bio: "Editor and writer focused on clarity, craft, and practical writing advice.",
     avatar:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&auto=format&fit=crop",
-    role: "Editor & Writing Coach",
+      "https://cdn.builder.io/api/v1/image/assets%2F8bc7a632da45401e992b4965a5d2c233%2Fcfbace838d1e4637be774003b87f6e99",
+    role: "Editor & Writer",
     social: {
-      twitter: "https://twitter.com/jameschen",
-      github: "https://github.com/jameschen",
+      twitter: "https://twitter.com/matthewvalero",
     },
   },
   {
