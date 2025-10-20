@@ -3,36 +3,20 @@ import { Post } from "@/types/blog";
 export const posts: Post[] = [
   {
     slug: "mastering-the-art-of-storytelling",
-    title: "Mastering the Art of Storytelling in Modern Writing",
-    excerpt:
-      "Exploring how contemporary writers blend traditional narrative techniques with innovative approaches to captivate readers in the digital age.",
-    author: "Sarah Mitchell",
-    tags: ["Storytelling", "Creative Writing", "Narrative"],
-    category: "Craft",
+    title: "From What to How: Reading Like a Writer",
+    excerpt: "Reflections on reading for craft and method.",
+    author: "Lucas Crespo",
+    tags: ["Reflection"],
+    category: "Reflection",
     cover:
-      "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&auto=format&fit=crop",
-    date: "2024-01-15",
+      "https://cdn.builder.io/api/v1/image/assets%2F8bc7a632da45401e992b4965a5d2c233%2Fc4a0d619e62d445cad2804235737cabf",
+    date: "2025-10-19",
     published: true,
     featured: true,
-    readingTime: 8,
-    content: `# Mastering the Art of Storytelling
+    readingTime: 2,
+    content: `# From What to How: Reading Like a Writer
 
-The art of storytelling has evolved dramatically in the digital age, yet its core principles remain timeless. Great stories still require compelling characters, engaging plots, and emotional resonance.
-
-## The Evolution of Narrative
-
-Modern writers face unique challenges and opportunities. The digital landscape has shortened attention spans while simultaneously creating new avenues for storytelling through interactive media, serialized content, and multimedia integration.
-
-## Key Elements of Compelling Stories
-
-1. **Character Development**: Create multi-dimensional characters that readers can relate to
-2. **Authentic Voice**: Develop a unique narrative voice that stands out
-3. **Emotional Arc**: Guide readers through a transformative journey
-4. **Pacing**: Balance action with reflection to maintain engagement
-
-## Conclusion
-
-The future of storytelling lies in embracing both tradition and innovation, crafting narratives that honor the past while boldly stepping into the future.`,
+Mike Bunn’s “How to Read Like a Writer” flipped a switch inside my head: rather than chug through the text trying to get its “what,” I opened it and slowly consumed it for its “how,” making each sentence seem like a choice that I could learn and experience. In this reading, I began to catch the quiet engineering that goes into good prose: the hook that gets attention but does not oversell; the point at which a definition of everything implicit comes just before the psychological concept; the transition word which counsels the reader in which direction the succeeding paragraph is heading; the transfer from the long, involved sentence to bursts of phrase when the idea is psychologically dense; the order in which the evidences appear, to lessen the diligent effort of the reader. Bunn’s questions make it practical and discernable: Who is the audience? What is the purpose of the writer? Why this arrangement or structure or tone, or parable here? What particular form of extra thought is existing just now—anecdote, definition, counterargument, synthesis? And here I may well ask, how could I do that? Putting that thought especially into some recent part I have read, I found, as an anecdote in the beginning, to remove the difficulty of complexity, mid-section short paragraphs to keep tempo; the end was an echo of the beginning illustration, rather than a restatement of the thesis told in narrative, rather than a restatement of the thesis told in narrative, for the sake of better technique and style. My process is as follows: My annotations become craft maps which I formulate the important transitions, topic-sentences, etc.; I have a “move bank,” opening processes, etc., in which I put down ways of early planting counterarguments; and my process of revision becomes “What is there in need of fixing,” and “What is there of good work for this motive and audience?” Putting one move from each piece into the next piece of writing yields cumulative growth. Reading like a writer demystifies the quality of good work: it is not a series of miracles, but repeating purposeful movements.`,
   },
   {
     slug: "the-power-of-minimalist-writing",
