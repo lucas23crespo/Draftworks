@@ -25,6 +25,17 @@ export const authors: Author[] = [
     },
   },
   {
+    id: "lucas-crespo",
+    name: "Lucas Crespo",
+    bio: "Writer and editor working on craft, close reading, and essays about writing.",
+    avatar:
+      "https://cdn.builder.io/api/v1/image/assets%2F8bc7a632da45401e992b4965a5d2c233%2F26386550c46d46119b041e03fd795048",
+    role: "Writer",
+    social: {
+      twitter: "",
+    },
+  },
+  {
     id: "emily-rodriguez",
     name: "Emily Rodriguez",
     bio: "Non-fiction author and researcher with a focus on narrative journalism. Published author of three critically acclaimed books.",
