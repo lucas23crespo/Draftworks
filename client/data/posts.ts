@@ -9,7 +9,7 @@ export const posts: Post[] = [
     tags: ["Reflection"],
     category: "Reflection",
     cover:
-      "https://cdn.builder.io/api/v1/image/assets%2F8bc7a632da45401e992b4965a5d2c233%2Fc4a0d619e62d445cad2804235737cabf",
+      "https://cdn.builder.io/api/v1/image/assets%2F8bc7a632da45401e992b4965a5d2c233%2Fc08302256e1d47158ce483a80c633651",
     date: "2025-10-19",
     published: true,
     featured: true,
