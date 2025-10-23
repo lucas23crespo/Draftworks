@@ -220,7 +220,9 @@ export default function Post() {
                       {author.name}
                     </Link>
                     <p className="text-sm text-white/50 mb-2">{author.role}</p>
-                    <p className="text-sm text-white/60">{author.bio}</p>
+                    {author.bio && (
+                      <p className="text-sm text-white/60">{author.bio}</p>
+                    )}
                   </div>
                 </div>
               </div>
