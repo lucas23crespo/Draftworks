@@ -41,7 +41,7 @@ Mike Bunn’s “How to Read Like a Writer” flipped a switch inside my head: r
     tags: [],
     category: "Blog",
     cover:
-      "https://cdn.builder.io/api/v1/image/assets%2F8bc7a632da45401e992b4965a5d2c233%2Fc08302256e1d47158ce483a80c633651",
+      "https://cdn.builder.io/api/v1/image/assets%2F8bc7a632da45401e992b4965a5d2c233%2F81e733f16cf440cfb39cb0ae31cb9348",
     date: "2025-10-20",
     published: true,
     featured: false,
