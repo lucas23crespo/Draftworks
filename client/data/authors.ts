@@ -19,7 +19,7 @@ export const authors: Author[] = [
     bio: "Editor and writer focused on clarity, craft, and practical writing advice.",
     avatar:
       "https://cdn.builder.io/api/v1/image/assets%2F8bc7a632da45401e992b4965a5d2c233%2Fcfbace838d1e4637be774003b87f6e99",
-    role: "Editor & Writer",
+    role: "Writer",
     social: {
       twitter: "https://twitter.com/matthewvalero",
     },
