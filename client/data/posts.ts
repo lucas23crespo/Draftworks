@@ -35,34 +35,20 @@ Mike Bunn’s “How to Read Like a Writer” flipped a switch inside my head: r
   },
   {
     slug: "building-authentic-dialogue",
-    title: "Building Authentic Dialogue That Brings Characters to Life",
-    excerpt:
-      "Learn the secrets to crafting dialogue that sounds natural, reveals character, and advances your plot seamlessly.",
-    author: "Sarah Mitchell",
-    tags: ["Dialogue", "Character", "Fiction"],
-    category: "Craft",
+    title: "Read Less, Read Better",
+    excerpt: "",
+    author: "Matthew Valero",
+    tags: [],
+    category: "Blog",
     cover:
-      "https://images.unsplash.com/photo-1516414447565-b14be0adf13e?w=800&auto=format&fit=crop",
-    date: "2024-01-05",
+      "https://cdn.builder.io/api/v1/image/assets%2F8bc7a632da45401e992b4965a5d2c233%2Fc08302256e1d47158ce483a80c633651",
+    date: "2025-10-20",
     published: true,
     featured: false,
-    readingTime: 7,
-    content: `# Building Authentic Dialogue
+    readingTime: 1,
+    content: `"how to read like a writer," by mike bunn, is a way of thinking about reading rather than simply a book; he states that reading with a writer's eye is to slow down enough to see the decisions an author has made (the way an author begins their writing, the shape of each sentence, the transition between ideas, the evidence to support the argument, the tone) and then determine why they were made and how these decisions create impact so that you can take some of these decisions and use them in your own writing, modify them, or eliminate them; the most successful aspect of the essay are its practical suggestions, breaking down the craft of writing into repetitive questions ("what is the author attempting to accomplish?"), ("does the structure of this assist the author?", ("what would happen if I deleted this?")) and suggesting that you make margin notes that document the techniques used by the author, and not just the content; bunn also changes the perception of difficulty being an indicator of the reader and author working through the pace at which an idea is delivered; bunn invites readers to find out how a section was written to be slow and how the author created a specific pacing; bunn invites readers to discover how a paragraph was written to be exciting and how the author developed its rhythm, syntax, and detail; i particularly enjoy bunn's approach to defining the audience and purpose as guiding principles for all of the author's decisions; this creates "rules" based on the context of the intended audience and purpose of the text and transforms "tools" such as passive voice, long sentences, fragments, and cliche's into devices that authors can apply in a thoughtful and intentional manner; while the article contains little jargon, uses many examples and is therefore accessible to beginning writers, yet can still benefit experienced writers wishing to improve control over their writing; the article does require time and patience from the reader to allow for the application of bunn's method to produce results however, bunn believes that deliberate attention will result in growth, read fewer books, but read more thoughtfully, and observe the quality of your draft increase.
 
-Dialogue is one of the most powerful tools in a writer's arsenal. When done well, it reveals character, advances plot, and creates rhythm in your narrative.
-
-## The Art of Listening
-
-The best dialogue writers are keen observers of real conversation. They notice speech patterns, verbal tics, and the way people really talk—not how we think they talk.
-
-## Key Principles
-
-1. Each character should have a distinct voice
-2. Subtext is often more important than the actual words
-3. Conflict drives compelling dialogue
-4. Read it aloud to test authenticity
-
-Remember: people rarely say exactly what they mean.`,
+Conflict drives compelling dialogue`,
   },
   {
     slug: "the-writers-guide-to-research",
