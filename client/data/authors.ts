@@ -48,6 +48,17 @@ export const authors: Author[] = [
       github: "https://github.com/emilyrodriguez",
     },
   },
+  {
+    id: "matthew-valero",
+    name: "Matthew Valero",
+    bio: "Editor and writer focused on clarity, craft, and practical writing advice.",
+    avatar:
+      "https://cdn.builder.io/api/v1/image/assets%2F8bc7a632da45401e992b4965a5d2c233%2Fcfbace838d1e4637be774003b87f6e99",
+    role: "Writer",
+    social: {
+      twitter: "https://twitter.com/matthewvalero",
+    },
+  },
 ];
 
 export const getAuthorById = (id: string) => authors.find((a) => a.id === id);
