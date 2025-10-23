@@ -97,7 +97,9 @@ export default function Post() {
                 {post.title}
               </h1>
 
-              <p className="text-xl text-white/60 mb-8">{post.excerpt}</p>
+              {post.excerpt && (
+                <p className="text-xl text-white/60 mb-8">{post.excerpt}</p>
+              )}
 
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
