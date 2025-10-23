@@ -197,11 +197,13 @@ export default function Post() {
               </div>
             </div>
 
-            <div className="mb-12 flex flex-wrap gap-2">
-              {post.tags.map((tag) => (
-                <TagPill key={tag} tag={tag} />
-              ))}
-            </div>
+            {post.tags.length > 0 && (
+              <div className="mb-12 flex flex-wrap gap-2">
+                {post.tags.map((tag) => (
+                  <TagPill key={tag} tag={tag} />
+                ))}
+              </div>
+            )}
 
             {author && (
               <div className="mb-12 rounded-2xl border border-white/10 bg-white/5 p-8">
