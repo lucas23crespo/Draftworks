@@ -23,7 +23,7 @@ export function PostCard({ post, variant = "default" }: PostCardProps) {
 
         <div className="p-6">
           <div className="flex items-center gap-3 mb-3">
-            <CategoryPill category={post.category} />
+            <CategoryPill category={post.category} asLink={false} />
             <div className="flex items-center gap-4 text-xs text-white/40">
               <span className="flex items-center gap-1">
                 <Calendar className="w-3 h-3" />
