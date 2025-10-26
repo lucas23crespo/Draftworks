@@ -152,7 +152,8 @@ Trusted readers can spot issues you're too close to see. Choose them wisely and 
   {
     slug: "what-it-really-means-to-steal-like-a-writer",
     title: "What It Really Means to “Steal” Like a Writer",
-    excerpt: "Reflection on Wendy Bishop's essay about 'stealing' as close reading and craft.",
+    excerpt:
+      "Reflection on Wendy Bishop's essay about 'stealing' as close reading and craft.",
     author: "Lucas Crespo",
     tags: ["Reflection"],
     category: "Reflection",
@@ -170,7 +171,7 @@ This concept ties directly to our discussions in class about "writing on commiss
 
 In addition, Bishop's essay assisted me in embracing failure. She states that to learn from other writers means you will be willing to risk, to test, and to fail. Her statement relates perfectly to Anne Lamott's concept of writing a "shitty first draft." Both authors emphasize that the imperfect beginnings of a project are not only acceptable -- but necessary. Prior to this course, I consistently attempted to craft each and every sentence to be flawless from the outset -- resulting in anxious and time-consuming writing. Currently, I perceive drafting much more positively. Each subsequent version is merely an alternative attempt at identifying what ultimately works best.
 
-Ultimately, Wendy Bishop has demonstrated that "stealing" is essentially about paying attention. Reading must occur with such care that you understand not only what the writers are stating -- but how they are expressing themselves -- and then using those expressions to inspire your own writing. As I continue to develop my writing skills, I would like to continue to engage in this type of reading. I would like to continually notice, borrow, modify and ultimately establish my own voice through the process.`
+Ultimately, Wendy Bishop has demonstrated that "stealing" is essentially about paying attention. Reading must occur with such care that you understand not only what the writers are stating -- but how they are expressing themselves -- and then using those expressions to inspire your own writing. As I continue to develop my writing skills, I would like to continue to engage in this type of reading. I would like to continually notice, borrow, modify and ultimately establish my own voice through the process.`,
   },
 ];
 
