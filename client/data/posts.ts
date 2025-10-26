@@ -149,6 +149,29 @@ Always let your work rest before revising. Distance provides perspective that im
 
 Trusted readers can spot issues you're too close to see. Choose them wisely and listen with an open mind.`,
   },
+  {
+    slug: "what-it-really-means-to-steal-like-a-writer",
+    title: "What It Really Means to “Steal” Like a Writer",
+    excerpt: "Reflection on Wendy Bishop's essay about 'stealing' as close reading and craft.",
+    author: "Lucas Crespo",
+    tags: ["Reflection"],
+    category: "Reflection",
+    cover:
+      "https://images.unsplash.com/photo-1516822003754-cca485356ecb?w=800&auto=format&fit=crop",
+    date: "2025-10-21",
+    published: true,
+    featured: false,
+    readingTime: 6,
+    content: `When I first began reading Wendy Bishop's essay "How to Read, Steal, and Write Like a Writer," I was unsure what she meant by "steal." At first I thought perhaps she was suggesting it is acceptable to copy another person's work. However, as I read further into the article, I quickly understood that Bishop was not referring to plagiarism. Instead, she illustrated how writers develop as writers by studying other writers -- examining the choices each writer makes, their rhythms, and their voice. Bishop states her primary thesis that good readers become good writers because reading and writing are mutually exclusive practices. In addition to understanding what a piece of writing is saying, good readers pay close attention to how the writer developed his/her message. Bishop calls this practice "reading like a writer" and has altered my perception of reading. Historically, I have been reading for only one reason: to comprehend what the writer intended. Today, I am beginning to read to examine how the writer accomplished his/her goals. For example, Bishop's tone is informal and welcoming -- it appears as if she is coaching the reader as opposed to simply lecturing them. To illustrate these stylistic techniques that help to create her engaging essay, Bishop utilizes repetition, direct address ("you"), and even humor to make her point. These stylistic techniques were so effective that I wanted to use a similar writing style for my own writing.
+
+One of Bishop's most compelling arguments is that writing is a process of imitation, experimentation and transformation. Bishop suggests that writers should model the styles they appreciate -- however, not literally replicate them. She explains that writers who adopt the writing techniques they admire are not copying -- they are practicing. Just as artists may study the brush strokes of another painter, writers learn through tracing sentence structure, attempting various tones and analyzing how other writers resolve their rhetorical issues.
+
+This concept ties directly to our discussions in class about "writing on commission." We write for particular reasons, audiences and contexts -- and Bishop illustrates how analyzing other writers assists in making informed decisions for your own "GAP" (Genre, Audience, and Purpose) in your writing. For instance, she examines how an author employs brief sentences to generate anxiety or lengthy ones to delay reflection. These are decisions I can now identify and attempt to implement when I draft my own essays or blog entries.
+
+In addition, Bishop's essay assisted me in embracing failure. She states that to learn from other writers means you will be willing to risk, to test, and to fail. Her statement relates perfectly to Anne Lamott's concept of writing a "shitty first draft." Both authors emphasize that the imperfect beginnings of a project are not only acceptable -- but necessary. Prior to this course, I consistently attempted to craft each and every sentence to be flawless from the outset -- resulting in anxious and time-consuming writing. Currently, I perceive drafting much more positively. Each subsequent version is merely an alternative attempt at identifying what ultimately works best.
+
+Ultimately, Wendy Bishop has demonstrated that "stealing" is essentially about paying attention. Reading must occur with such care that you understand not only what the writers are stating -- but how they are expressing themselves -- and then using those expressions to inspire your own writing. As I continue to develop my writing skills, I would like to continue to engage in this type of reading. I would like to continually notice, borrow, modify and ultimately establish my own voice through the process.`
+  },
 ];
 
 export const getFeaturedPosts = () => posts.filter((p) => p.featured);
