@@ -181,7 +181,7 @@ Ultimately, Wendy Bishop has demonstrated that "stealing" is essentially about p
     tags: ["Reflection"],
     category: "Reflection",
     cover:
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800&auto=format&fit=crop",
     date: "2025-10-22",
     published: true,
     featured: false,
