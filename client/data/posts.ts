@@ -68,21 +68,15 @@ To many members of Generation Z, who have listened to these sounds through MTV, 
     published: true,
     featured: false,
     readingTime: 9,
-    content: `# The Writer's Guide to Effective Research
+    content: `# Innovation & Synthesis
 
-Research is the foundation of credible, engaging writing. Whether you're writing fiction or non-fiction, thorough research adds layers of authenticity that readers can feel.
+I used to pursue "original" as if it were everything. Mike Bunn's "How to Read Like a Writer" taught me to slow down, observe how pieces of writing are constructed—how hooks work, how sentences are organized, where definitions go, where turns happen, etc. Tracklib's sampling analyses gave me the missing piece: an audience will identify with you faster through a "recognition" point—a timbre, a melody, an era, etc.—and your job is to take that recognizable element and twist it into something new.
 
-## Research Strategies
+Now, GAP—Genre, Audience, Purpose—is first. When I know who I am talking to and what I want them to experience/feel, the structure of the piece develops naturally. Familiarity isn't lazy—it is leverage. A clearly defined paragraph structure or a voice that readers can rely on can function similarly to a 2000s riff in a modern song: it gives the reader permission to enter the space. It is the unexpectedness—counter example, clipped phrase following a long build up, fresh metaphor—that keeps the reader engaged.
 
-- Start broad, then narrow your focus
-- Use primary sources when possible
-- Interview experts in the field
-- Visit locations if feasible
-- Keep meticulous notes
+A well developed form can create feeling. A well developed transition is like a pre-chorus; sentence length is similar to an arrangement; a pause is a drop. I revise in two waves. First, for craft (is this piece moving as I intended?); second, for audience and memory (what in this is recognizable, and what is making this now?). I no longer revere "new". My goal is to be effective, and then I will earn "new" within it. Begin with where the reader already lives, and then demonstrate a door that they did not realize existed. This is my process: GAP first; Recognition Second; Intentional Twist Always.
 
-## Balancing Research and Writing
-
-The challenge is knowing when to stop researching and start writing. Research should inform your work, not paralyze it.`,
+`,
   },
   {
     slug: "overcoming-writers-block",
