@@ -169,7 +169,8 @@ Ultimately, Wendy Bishop has demonstrated that "stealing" is essentially about p
   {
     slug: "breaking-down-building-up-craft-lessons-bunn-bishop",
     title: "Breaking Down & Building Up: Craft Lessons from Bunn and Bishop",
-    excerpt: "Comparing Mike Bunn and Wendy Bishop on reading and writing craft.",
+    excerpt:
+      "Comparing Mike Bunn and Wendy Bishop on reading and writing craft.",
     author: "Lucas Crespo",
     tags: ["Reflection"],
     category: "Reflection",
@@ -189,7 +190,7 @@ Although there are significant stylistic differences between the two authors, bo
 
 Together, the two texts have shaped my view of myself as both a writer and a reader. As a writer, I now recognize that progress is not accidental, it occurs due to observing deliberate patterns and then attempting to replicate those patterns through practice. Bunn provided me with tools to identify craft moves — hooks, strategic examples, pacing changes — while Bishop provided me with the confidence to borrow from those moves, and accept imperfect drafts. As a reader, the two texts have instructed me that reading is not a passive activity. Now, when I read, I pay attention to structure, tone, rhythm, and decisions, rather than passively absorbing meaning.
 
-In conclusion, by combining the perspectives of Bunn and Bishop, I learned that writing is both a form of architecture and discovery. Writing is both a methodical, detailed, and aware-of-audience task — but also one that requires courage, experimentation, and the ability to fail and continue moving forward. When I read with intention and then write with flexibility, I am not simply copying techniques; I am creating and molding them into my own unique voice. This understanding — born from combining the perspectives of these two authors — is the foundation of genuine growth as a writer.`
+In conclusion, by combining the perspectives of Bunn and Bishop, I learned that writing is both a form of architecture and discovery. Writing is both a methodical, detailed, and aware-of-audience task — but also one that requires courage, experimentation, and the ability to fail and continue moving forward. When I read with intention and then write with flexibility, I am not simply copying techniques; I am creating and molding them into my own unique voice. This understanding — born from combining the perspectives of these two authors — is the foundation of genuine growth as a writer.`,
   },
 ];
 
