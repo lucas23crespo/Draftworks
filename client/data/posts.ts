@@ -173,6 +173,31 @@ In addition, Bishop's essay assisted me in embracing failure. She states that to
 
 Ultimately, Wendy Bishop has demonstrated that "stealing" is essentially about paying attention. Reading must occur with such care that you understand not only what the writers are stating -- but how they are expressing themselves -- and then using those expressions to inspire your own writing. As I continue to develop my writing skills, I would like to continue to engage in this type of reading. I would like to continually notice, borrow, modify and ultimately establish my own voice through the process.`,
   },
+  {
+    slug: "breaking-down-building-up-craft-lessons-bunn-bishop",
+    title: "Breaking Down & Building Up: Craft Lessons from Bunn and Bishop",
+    excerpt: "Comparing Mike Bunn and Wendy Bishop on reading and writing craft.",
+    author: "Lucas Crespo",
+    tags: ["Reflection"],
+    category: "Reflection",
+    cover:
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&auto=format&fit=crop",
+    date: "2025-10-22",
+    published: true,
+    featured: false,
+    readingTime: 6,
+    content: `As I look back at Mike Bunn's "How to Read Like a Writer" and Wendy Bishop's "How to Read, Steal, and Write Like a Writer", I see that the two authors each take a very different way to get to the same end goal of finding connections between reading and writing. Although both authors are working to help develop writers - students who have not yet figured out how having knowledge of craft can positively affect their writing, they each achieve their ends through distinctly different tones and approaches.
+
+Mike Bunn, uses a structured and analytical tone. He guides his readers to think about writing similar to an engineer thinking about a design blueprint. Wendy Bishop, however, uses a much more conversational and mentoring tone. She encourages her readers to experiment and reassure them that using other people's work as examples or "stealing" ideas, and that it is okay to make mistakes along the way, are all part of the learning process.
+
+Although both authors' goals are the same (to create stronger and more thoughtful writers), the authors take a vastly different path. Bunn provides information based on craft mechanics - he asks questions, explains structural choices, and demonstrates how the choices writers make regarding transitions, pacing, and paragraph shapes will ultimately influence meaning. The primary focus of his strategies is on logic and structure. Bishop, however, focuses on writers' mindsets and processes. Her repetition, humor, and direct address ("you") provide emotional support to writers and remind them that taking inspiration from others does not constitute plagiarism, but rather, is a form of practice. She establishes her credibility (ethos) by sharing her own experiences with the imperfections involved with writing, providing new writers with permission to write imperfectly and openly.
+
+Although there are significant stylistic differences between the two authors, both authors use examples of actual writing to demonstrate technique. However, they merely utilize the examples in different ways. Bunn deconstructs them, whereas Bishop views them as inspirational models. There appears to be a level of rhetorical overlap between the two authors in their belief that writing well depends upon reading consciously, but they share this commonality in differing ways — Bunn through precision and analysis, and Bishop through inspiration and experimentation. By viewing these two texts side-by-side, I was able to begin to recognize that the best rhetorical choices depend solely on GAP: genre, audience, and purpose. A technical, instructional tone is most effective when teaching readers where to "look" in a piece of writing, whereas a motivational, warm tone is most effective in reducing fear and inspiring creativity.
+
+Together, the two texts have shaped my view of myself as both a writer and a reader. As a writer, I now recognize that progress is not accidental, it occurs due to observing deliberate patterns and then attempting to replicate those patterns through practice. Bunn provided me with tools to identify craft moves — hooks, strategic examples, pacing changes — while Bishop provided me with the confidence to borrow from those moves, and accept imperfect drafts. As a reader, the two texts have instructed me that reading is not a passive activity. Now, when I read, I pay attention to structure, tone, rhythm, and decisions, rather than passively absorbing meaning.
+
+In conclusion, by combining the perspectives of Bunn and Bishop, I learned that writing is both a form of architecture and discovery. Writing is both a methodical, detailed, and aware-of-audience task — but also one that requires courage, experimentation, and the ability to fail and continue moving forward. When I read with intention and then write with flexibility, I am not simply copying techniques; I am creating and molding them into my own unique voice. This understanding — born from combining the perspectives of these two authors — is the foundation of genuine growth as a writer.`
+  },
 ];
 
 export const getFeaturedPosts = () => posts.filter((p) => p.featured);
