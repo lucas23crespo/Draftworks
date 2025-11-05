@@ -56,11 +56,10 @@ To many members of Generation Z, who have listened to these sounds through MTV, 
   },
   {
     slug: "the-writers-guide-to-research",
-    title: "The Writer's Guide to Effective Research",
-    excerpt:
-      "Master the research techniques that will add depth, authenticity, and credibility to your writing projects.",
-    author: "Emily Rodriguez",
-    tags: ["Research", "Non-fiction", "Process"],
+    title: "Innovation & Synthesis",
+    excerpt: "",
+    author: "Matthew Valero",
+    tags: [],
     category: "Process",
     cover:
       "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&auto=format&fit=crop",
