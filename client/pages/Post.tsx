@@ -1,11 +1,37 @@
+import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Calendar, Clock, Share2, ArrowLeft } from "lucide-react";
-import { useEffect, useState } from "react";
 import { getPostBySlug, posts } from "@/data/posts";
 import { getAuthorById } from "@/data/authors";
 import { TagPill } from "@/components/blog/TagPill";
 import { CategoryPill } from "@/components/blog/CategoryPill";
 import { PostCard } from "@/components/blog/PostCard";
+
+function renderInline(text: string): React.ReactNode[] {
+  // Split on bold (**text**) and markdown links ([text](url))
+  const parts = text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g);
+  return parts.map((part, i) => {
+    const boldMatch = part.match(/^\*\*([^*]+)\*\*$/);
+    if (boldMatch) {
+      return <strong key={i} className="font-semibold text-white">{boldMatch[1]}</strong>;
+    }
+    const linkMatch = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (linkMatch) {
+      return (
+        <a
+          key={i}
+          href={linkMatch[2]}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white/80 underline underline-offset-2 decoration-white/30 hover:text-white transition-colors"
+        >
+          {linkMatch[1]}
+        </a>
+      );
+    }
+    return part;
+  });
+}
 
 export default function Post() {
   const { slug } = useParams<{ slug: string }>();
@@ -144,53 +170,71 @@ export default function Post() {
                 {post.content?.split("\n\n").map((paragraph, i) => {
                   if (paragraph.startsWith("# ")) {
                     return (
-                      <h1
-                        key={i}
-                        className="mb-6 text-3xl font-light text-white"
-                      >
+                      <h1 key={i} className="mb-6 text-3xl font-light text-white">
                         {paragraph.replace("# ", "")}
                       </h1>
                     );
                   }
                   if (paragraph.startsWith("## ")) {
                     return (
-                      <h2
-                        key={i}
-                        className="mt-8 mb-4 text-2xl font-light text-white"
-                      >
+                      <h2 key={i} className="mt-10 mb-4 text-2xl font-light text-white border-b border-white/10 pb-2">
                         {paragraph.replace("## ", "")}
                       </h2>
                     );
                   }
-                  if (paragraph.startsWith("- ")) {
-                    const items = paragraph.split("\n");
+                  // Image blocks: lines starting with ![
+                  if (paragraph.startsWith("![")) {
+                    const lines = paragraph.split("\n");
+                    const imgLine = lines[0];
+                    const captionLine = lines.find((l) => l.startsWith("> "));
+                    const match = imgLine.match(/!\[([^\]]*)\]\(([^)]+)\)/);
+                    if (!match) return null;
                     return (
-                      <ul
-                        key={i}
-                        className="mb-6 list-disc list-inside space-y-2 text-white/60"
-                      >
+                      <figure key={i} className="my-8">
+                        <img
+                          src={match[2]}
+                          alt={match[1]}
+                          className="w-full rounded-xl border border-white/10 object-cover"
+                        />
+                        {captionLine && (
+                          <figcaption className="mt-3 text-center text-sm italic text-white/50">
+                            {captionLine.replace("> ", "")}
+                          </figcaption>
+                        )}
+                      </figure>
+                    );
+                  }
+                  // Standalone blockquote
+                  if (paragraph.startsWith("> ")) {
+                    return (
+                      <blockquote key={i} className="my-6 border-l-2 border-white/30 pl-4 italic text-white/50 text-sm">
+                        {paragraph.replace(/^> /, "")}
+                      </blockquote>
+                    );
+                  }
+                  if (paragraph.startsWith("- ")) {
+                    const items = paragraph.split("\n").filter(Boolean);
+                    return (
+                      <ul key={i} className="mb-6 list-disc list-inside space-y-2 text-white/60">
                         {items.map((item, j) => (
-                          <li key={j}>{item.replace("- ", "")}</li>
+                          <li key={j}>{renderInline(item.replace(/^- /, ""))}</li>
                         ))}
                       </ul>
                     );
                   }
                   if (/^\d+\./.test(paragraph)) {
-                    const items = paragraph.split("\n");
+                    const items = paragraph.split("\n").filter(Boolean);
                     return (
-                      <ol
-                        key={i}
-                        className="mb-6 list-decimal list-inside space-y-2 text-white/60"
-                      >
+                      <ol key={i} className="mb-6 list-decimal list-inside space-y-2 text-white/60">
                         {items.map((item, j) => (
-                          <li key={j}>{item.replace(/^\d+\.\s/, "")}</li>
+                          <li key={j}>{renderInline(item.replace(/^\d+\.\s/, ""))}</li>
                         ))}
                       </ol>
                     );
                   }
                   return (
                     <p key={i} className="mb-6 leading-relaxed text-white/70">
-                      {paragraph}
+                      {renderInline(paragraph)}
                     </p>
                   );
                 })}
