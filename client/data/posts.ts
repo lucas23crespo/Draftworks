@@ -196,7 +196,7 @@ In conclusion, by combining the perspectives of Bunn and Bishop, I learned that 
     slug: "stop-prohibiting-ai-start-teaching-it",
     title: "Stop Prohibiting A.I. in the Classroom — Start Teaching Students How to Use It",
     excerpt: "Banning AI tools isn't the answer. Research shows the real issue is how AI is used — and educators must lead the way.",
-    author: "Matthew Valero",
+    author: "Lucas Crespo",
     tags: ["AI", "Education", "Technology"],
     category: "Blog",
     cover:
@@ -213,7 +213,7 @@ While these concerns are valid, banning AI is not the correct solution. Research
 
 At this point, the question is no longer "Should we permit AI?" — it is now "How can we teach students to use AI effectively?"
 
-![AI classroom with students and teacher discussing technology](https://cdn.builder.io/api/v1/image/assets%2F8bc7a632da45401e992b4965a5d2c233%2Fa7ceb6ba90634947b9a87e363282f967?format=webp&width=800&height=1200)
+![AI classroom with students and teacher discussing technology](https://cdn.builder.io/api/v1/image/assets%2F8bc7a632da45401e992b4965a5d2c233%2Ffae2a75e88aa423bb7f9edb4be40b9d6?format=webp&width=800&height=1200)
 > AI can either support or reduce learning depending on how it is used.
 
 ## Why Do College Students Rely So Heavily on AI?
