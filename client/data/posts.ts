@@ -201,7 +201,7 @@ In conclusion, by combining the perspectives of Bunn and Bishop, I learned that 
     category: "Blog",
     cover:
       "https://cdn.builder.io/api/v1/image/assets%2F8bc7a632da45401e992b4965a5d2c233%2Fa7ceb6ba90634947b9a87e363282f967?format=webp&width=800&height=1200",
-    date: "2025-01-30",
+    date: "2026-03-30",
     published: true,
     featured: true,
     readingTime: 7,
