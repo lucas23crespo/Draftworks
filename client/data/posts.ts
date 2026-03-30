@@ -194,8 +194,8 @@ In conclusion, by combining the perspectives of Bunn and Bishop, I learned that 
   },
   {
     slug: "stop-prohibiting-ai-start-teaching-it",
-    title: "Stop Prohibiting A.I. in the Classroom — Start Teaching Students How to Use It",
-    excerpt: "Banning AI tools isn't the answer. Research shows the real issue is how AI is used — and educators must lead the way.",
+    title: "Stop Prohibiting AI in the Classroom — Start Teaching Students How to Use It",
+    excerpt: "AI is now part of college life. The better response is to teach students how to use it responsibly, critically, and ethically.",
     author: "Lucas Crespo",
     tags: ["AI", "Education", "Technology"],
     category: "Blog",
@@ -207,112 +207,104 @@ In conclusion, by combining the perspectives of Bunn and Bishop, I learned that 
     readingTime: 7,
     content: `## What Is Really Wrong About Artificial Intelligence?
 
-Artificial intelligence tools such as ChatGPT are no longer something that college teachers can choose whether or not to include in their courses—they are now an integral part of students' daily academic lives. Because of this, many instructors have raised valid concerns about AI and its impact on learning. For example, if students rely too heavily on AI to complete assignments, will they lose their ability to think critically?
+Artificial intelligence tools such as ChatGPT are no longer something that college teachers have a choice about whether or not to include in their courses – they are now an integral part of the day-to-day academic lives of many college students. As a result of this new reality, many college teachers have expressed legitimate concerns regarding AI and what it means for their role as teachers. For example, if a significant number of college students begin to rely upon AI for completing work assigned in class, will those students lose the ability to think critically?
 
-While these concerns are valid, banning AI is not the correct solution. Research suggests that the real issue is not AI itself, but how it is used in the learning environment. Instead of restricting access, educators should focus on teaching students how to use AI responsibly.
+While there is a valid reason for teachers to be concerned about the potential negative effects of relying on artificial intelligence, banning AI in classes is not the correct way to address these issues. Moreover, much of the literature on this topic indicates that rather than the existence of artificial intelligence itself being the problem, the problem lies within how people choose to integrate AI into the learning environment. Therefore, rather than attempting to restrict access to these types of tools, instructors would be better off focusing on providing students with instruction on how to utilize these tools appropriately.
 
-At this point, the question is no longer "Should we permit AI?" — it is now "How can we teach students to use AI effectively?"
+At this time, we are no longer asking ourselves "should we allow AI?" We are now asking ourselves "how can we best instruct our students on how to make appropriate use of AI?"
 
 ![AI classroom with students and teacher discussing technology](https://cdn.builder.io/api/v1/image/assets%2F8bc7a632da45401e992b4965a5d2c233%2Ffae2a75e88aa423bb7f9edb4be40b9d6?format=webp&width=800&height=1200)
 > AI can either support or reduce learning depending on how it is used.
 
 ## Why Do College Students Rely So Heavily on AI?
 
-Students are not using AI simply to cheat—they are using it because it offers speed, accessibility, and support. AI helps students understand complex topics, generate ideas, and receive immediate feedback.
+College students are turning to AI for various reasons. They are not turning to AI just so that they can cheat; they are using AI for the reasons that it provides: speed, accessibility, and assistance. AI can help students understand complex topics, generate creative ideas, and respond quickly to questions posed by students.
 
-According to [ChatGPT for Good? On Opportunities and Challenges of Large Language Models for Education](https://doi.org/10.1016/j.lindif.2023.102274), AI can support learning by helping students brainstorm, organize ideas, and refine their thinking.
+According to [ChatGPT for Good? On Opportunities and Challenges of Large Language Models for Education](https://doi.org/10.1016/j.lindif.2023.102274), AI can aid students in generating ideas, organizing thoughts and receiving instant feedback.
 
-However, the same research warns that overreliance on AI can reduce cognitive engagement if students stop actively participating in their own thinking.
+However, the same research points out that while AI can potentially assist with student learning, excessive reliance on AI could lead to reduced cognitive engagement among students as they engage less actively in their own thought processes.
 
-**This highlights a key idea:** AI is not harmful by itself—it becomes harmful when used passively.
+**Therefore, this demonstrates another important idea:** AI is not necessarily detrimental — it becomes detrimental when utilized passively.
 
 ## Myth #1: AI Automatically Reduces Critical Thinking
 
-A common argument is that AI creates dependency among students. While this can happen, it is not inevitable.
+Another argument commonly made against utilizing AI is that it leads to dependency among students. While dependency can occur through the use of AI, it is certainly not inevitable. Research has demonstrated that one of the primary factors determining the impact that AI has on learning outcomes is how the AI is utilized. If students merely copy answers generated by AI, then they fail to take advantage of opportunities to learn. On the other hand, if students utilize AI as a resource — for brainstorming purposes or for revising their work — then the utilization of AI can actually improve learning outcomes.
 
-Research shows that the impact of AI depends on how it is used. If students simply copy AI-generated answers, they miss learning opportunities. However, when AI is used for brainstorming or revision, it can actually improve learning outcomes.
+Additionally, research studies found in ERIC (such as [this academic review on AI and education](https://eric.ed.gov/?q=artificial+intelligence+critical+thinking)) demonstrate that the impact of AI upon critical thinking depends entirely on the extent to which students are engaged during the learning process.
 
-Additionally, research from ERIC (such as [this academic review on AI and education](https://eric.ed.gov/?q=artificial+intelligence+critical+thinking)) demonstrates that AI's effect on critical thinking depends on student engagement.
-
-**In other words:** AI does not eliminate thinking—it can either weaken or strengthen it.
+**In other words:** AI does not eliminate thinking — it can either weaken or strengthen it.
 
 ## Why Prohibiting AI Does Not Work
 
-Many instructors believe banning AI will protect academic integrity. However, this approach has major limitations:
+Many professors believe that prohibiting AI will serve as a means to maintain academic honesty. There are multiple shortcomings to this philosophy:
 
-- AI tools are widely accessible, making enforcement difficult
-- Students may use AI secretly without guidance
-- It ignores the reality that AI will be part of future careers
+- AI tools are easily available online, thus enforcement is very difficult to accomplish.
+- Professors may find themselves dealing with students who choose to secretly use AI.
+- Prohibition fails to account for the reality that AI will eventually be incorporated into every aspect of future professional environments.
 
-According to [UNESCO Guidance for Generative AI in Education and Research](https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research), schools should focus on AI literacy, not prohibition.
+According to [UNESCO Guidance for Generative AI in Education and Research](https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research), colleges and universities should focus upon developing the literacy surrounding artificial intelligence as opposed to strictly forbidding its usage.
 
-Educators should teach:
+Educators need to provide their students with knowledge of how artificial intelligence functions, the limits associated with each type of AI tool, and ways in which students can utilize these tools ethically.
 
-- How AI works
-- Its limitations
-- Ethical ways to use it
+By failing to provide their students with these types of foundational skills, educators miss an opportunity to prepare their students to navigate and thrive in an ever-evolving world in which artificial intelligence is ubiquitous.
 
-Without this, students are unprepared for a world where AI is everywhere.
+## Better Alternatives: Educate Students Regarding Usage of Artificial Intelligence Tools
 
-## Better Solution: Teach Students How to Use AI
+Rather than wondering "how can we prevent students from utilizing artificial intelligence?", faculty members should wonder "how can we design assignments that necessitate thinking even when utilizing artificial intelligence?"
 
-Instead of asking "How do we stop AI?", instructors should ask: "How do we design assignments that require thinking—even with AI?"
+Researcher Ethan Mollick outlines methods whereby faculty members can effectively incorporate artificial intelligence into their course designs.
 
-Research by Ethan Mollick shows that educators can integrate AI effectively using strategies like [Assigning AI: Seven Approaches for Students](https://www.oneusefulthing.org/p/assigning-ai-seven-ways-of-using).
+- Provide students with additional resources and revisions in addition to initial brainstorming sessions.
+- Request that your students evaluate and critique responses generated by artificial intelligence.
+- Require students to reflect upon how they used artificial intelligence throughout the duration of the assignment.
 
-Examples include:
+These methods enable students to view artificial intelligence as a learning tool and not merely as a shortcut.
 
-- Using AI for brainstorming, but requiring revision
-- Asking students to critique AI-generated responses
-- Requiring reflection on AI usage
+## Re-designing Assignments for the Age of Artificial Intelligence
 
-These approaches turn AI into a learning tool—not a shortcut.
+Since AI can generate simple answers for many types of assignments, faculty members will be required to design assignments which go far beyond simple answers. Here are examples of successful re-designed assignments:
 
-## Redesigning Assignments for the AI Era
+**1. Reflective writing:** When possible, ask your students to describe how they developed their ideas as opposed to presenting their final answer(s).
 
-Since AI can generate basic answers, assignments must go beyond basic responses.
+**2. Process-based tasks:** Include requirements for draft development, revision requests, etc. Along with an explanation of the reasoning behind each decision.
 
-**1. Reflective Writing** — Ask students to explain how they developed their ideas.
+**3. Analytical evaluations:** Ask your students to examine and critique responses generated by artificial intelligence.
 
-**2. Process-Based Work** — Require drafts, revisions, and reasoning.
+Each of these alternatives ensures that regardless of whether or not your students choose to use AI, they continue to participate actively in their own learning experiences.
 
-**3. Critical Analysis** — Have students evaluate AI-generated content.
+## Why This Matters to the Future of Higher Education
 
-These strategies ensure students remain active thinkers.
+AI is here to stay. In fact, based upon current trends and technological advancements, we expect that both sophistication and integration into all aspects of society will increase dramatically.
 
-## Why This Matters for the Future of Education
+Graduates who enter into their first job having had little or no experience working with responsible uses of AI will place themselves at a serious disadvantage compared to those who entered into their careers equipped with this knowledge.
 
-AI is not going away—it will continue to evolve and become more integrated into everyday life.
+Preparing students for future employment environments by educating them regarding how to use AI responsibly allows students to:
 
-Students who do not learn how to use AI responsibly will be at a disadvantage.
+- Critically evaluate sources of information.
+- Work responsibly with technology.
+- Be adaptable in response to changing workplace expectations.
 
-Teaching AI literacy helps students:
+## The Realistic Objective: Developing Smarter Students Rather Than Creating AI-Free Classrooms
 
-- Evaluate information critically
-- Use technology responsibly
-- Adapt to future workplaces
+The objective of education has always been to cultivate thinking abilities, not to shield students from tools.
 
-## The Real Goal: Smarter Students, Not AI-Free Classrooms
+- Calculators did not eliminate math education.
+- The internet did not destroy research.
+- AI will not destroy learning — unless we allow AI to be utilized without guidance.
 
-Education has never been about avoiding tools—it has always been about developing thinking.
+Educating students regarding responsible uses of AI enables educators to:
 
-- Calculators did not destroy math
-- The internet did not destroy research
-- AI will not destroy learning—unless misused
+- Enhance critical thinking abilities.
+- Increase engagement.
+- Develop a sense of responsibility in relation to their future employment environments.
 
-Teaching students how to use AI responsibly can:
+## Last Thoughts
 
-- Strengthen critical thinking
-- Increase engagement
-- Prepare students for real-world environments
+The primary adversary of education is misuse of AI, not AI itself.
 
-## Final Thoughts
+Rather than creating classrooms devoid of AI, educators should welcome the opportunity to educate students on how to think with AI, not instead of it.
 
-The real problem is not AI—it is the misuse of AI.
-
-Instead of banning it, educators should teach students how to think **with** AI, not instead of it.
-
-Because the goal of education is not to avoid technology—**it is to use it wisely.**`,
+Ultimately, our goal as educators is not to create students who avoid technology. Our ultimate goal as educators is to create students who understand how to utilize technology wisely.`,
   },
 ];
 
